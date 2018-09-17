@@ -1,0 +1,12 @@
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035024653029871618', 'itemConfig', '4', '[0],[4],', '道具配置', '', '/itemConfig', '99', '2', '1', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035024653029871618','2');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035024653029871619', 'itemConfig_list', 'itemConfig', '[0],[4],[itemConfig],', '道具配置列表', '', '/itemConfig/list', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035024653029871619','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035024653029871620', 'itemConfig_add', 'itemConfig', '[0],[4],[itemConfig],', '道具配置添加', '', '/itemConfig/add', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035024653029871620','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035024653029871621', 'itemConfig_update', 'itemConfig', '[0],[4],[itemConfig],', '道具配置更新', '', '/itemConfig/update', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035024653029871621','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035024653029871622', 'itemConfig_delete', 'itemConfig', '[0],[4],[itemConfig],', '道具配置删除', '', '/itemConfig/delete', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035024653029871622','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035024653029871623', 'itemConfig_detail', 'itemConfig', '[0],[4],[itemConfig],', '道具配置详情', '', '/itemConfig/detail', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035024653029871623','3');

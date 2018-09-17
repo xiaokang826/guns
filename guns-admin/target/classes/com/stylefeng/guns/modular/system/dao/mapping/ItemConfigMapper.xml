@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.system.dao.ItemConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.system.model.ItemConfig">
+        <id column="id" property="id" />
+        <result column="details" property="details" />
+        <result column="extra_price" property="extraPrice" />
+        <result column="game_id" property="gameId" />
+        <result column="item_icon" property="itemIcon" />
+        <result column="item_name" property="itemName" />
+        <result column="item_type" property="itemType" />
+        <result column="price" property="price" />
+        <result column="tag" property="tag" />
+        <result column="time_out" property="timeOut" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, details, extra_price, game_id, item_icon, item_name, item_type, price, tag, time_out
+    </sql>
+
+</mapper>

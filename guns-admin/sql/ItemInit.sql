@@ -1,0 +1,12 @@
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035032177963638785', 'itemInit', 'item', '[0],[item],', '赠送道具', '', '/itemInit', '99', '2', '1', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035032177963638785','2');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035032177963638786', 'itemInit_list', 'itemInit', '[0],[item],[itemInit],', '赠送道具列表', '', '/itemInit/list', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035032177963638786','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035032177963638787', 'itemInit_add', 'itemInit', '[0],[item],[itemInit],', '赠送道具添加', '', '/itemInit/add', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035032177963638787','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035032177963638788', 'itemInit_update', 'itemInit', '[0],[item],[itemInit],', '赠送道具更新', '', '/itemInit/update', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035032177963638788','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035032177963638789', 'itemInit_delete', 'itemInit', '[0],[item],[itemInit],', '赠送道具删除', '', '/itemInit/delete', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035032177963638789','3');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1035032177963638790', 'itemInit_detail', 'itemInit', '[0],[item],[itemInit],', '赠送道具详情', '', '/itemInit/detail', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1035032177963638790','3');
