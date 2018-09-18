@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
  * @author stylefeng
  * @Date 2017/5/20 21:58
  */
+//根据加载顺序 此类没什么卵用
 @Configuration
 @ConditionalOnProperty(prefix = "guns", name = "muti-datasource-open", havingValue = "true")
 public class DefaultMultiConfig {

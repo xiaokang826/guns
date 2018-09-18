@@ -1,4 +1,5 @@
 # AutoConfiguration
+# 程序启动时自动配置的类
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
 com.stylefeng.guns.core.base.controller.GlobalController,\
 com.stylefeng.guns.core.config.DefaultFastjsonConfig,\

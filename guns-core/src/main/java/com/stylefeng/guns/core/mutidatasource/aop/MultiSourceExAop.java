@@ -12,7 +12,9 @@ import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 import org.springframework.core.Ordered;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 
@@ -23,6 +25,7 @@ import java.lang.reflect.Method;
  * @date 2017年3月5日 上午10:22:16
  */
 @Aspect
+@Component //单数据源时可以去掉此注解，不必注册bean
 public class MultiSourceExAop implements Ordered {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
@@ -48,7 +51,7 @@ public class MultiSourceExAop implements Ordered {
         DataSource datasource = currentMethod.getAnnotation(DataSource.class);
 
         DataSourceContextHolder.setDataSourceType(datasource.value());
-        log.info("设置数据源为->：" + datasource.value());
+        log.info("根据注解切换数据源为->：" + datasource.value());
 
         try {
             return point.proceed();

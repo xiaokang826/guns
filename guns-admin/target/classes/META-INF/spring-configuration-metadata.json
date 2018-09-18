@@ -77,6 +77,61 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
       "name": "guns.muti-datasource.driver-class-name",
       "type": "java.lang.String"
     },
@@ -88,6 +143,101 @@
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
       "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.password",
       "type": "java.lang.String"
     },
     {
@@ -122,6 +272,61 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
       "name": "guns.muti-datasource.username",
       "type": "java.lang.String"
     },
@@ -133,6 +338,101 @@
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
       "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MutiDataSourceProperties",
+      "name": "guns.muti-datasource.validation-query",
       "type": "java.lang.String"
     },
     {

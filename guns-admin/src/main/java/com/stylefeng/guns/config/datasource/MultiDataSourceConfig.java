@@ -3,11 +3,11 @@ package com.stylefeng.guns.config.datasource;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
+import com.stylefeng.guns.config.aop.MultiSourceExAop;
 import com.stylefeng.guns.core.config.properties.DruidProperties;
 import com.stylefeng.guns.core.config.properties.MutiDataSourceProperties;
 import com.stylefeng.guns.core.datascope.DataScopeInterceptor;
 import com.stylefeng.guns.core.mutidatasource.DynamicDataSource;
-import com.stylefeng.guns.core.mutidatasource.aop.MultiSourceExAop;
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -46,7 +46,7 @@ public class MultiDataSourceConfig {
     }
 
     @Bean
-    public MultiSourceExAop multiSourceExAop() {
+    public MultiSourceExAop aop() {
         return new MultiSourceExAop();
     }
 

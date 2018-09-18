@@ -1,5 +1,6 @@
 package com.stylefeng.guns.config.aop;
 
+import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.DataSourceContextHolder;
 import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.Aspect;
@@ -16,9 +17,7 @@ import org.springframework.core.Ordered;
  * @date 2017年3月5日 上午10:22:16
  */
 @Aspect
-//@Component
-//@Order(1)
-//@Service()
+//@Component //core包有一个aop已经注册过，此处再用此注解会出现重名报错
 public class MultiSourceExAop implements Ordered {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
@@ -36,21 +35,23 @@ public class MultiSourceExAop implements Ordered {
     @Before("cut()")
     public void data(){
         log.info("切换到item 数据源...");
+        DataSourceContextHolder.setDataSourceType(DBTypeEnum.item);
+        log.info("设置数据源为->：" + DBTypeEnum.item);
 //        around(DBTypeEnum.item);
     }
 
-    //before、after 和 around 来区别是在每个 joint point 之前、之后还是代替执行
-    //aop执行顺序 @around(.proceed()) -> @Before -> @around -> @after -> @afterReturning
-    public void around(String dataSourceName){
-//        Signature signature = point.getSignature();
-//        if (!(signature instanceof MethodSignature)) {
-//            throw new IllegalArgumentException("该注解只能用于方法");
-//        }
-//        MethodSignature currentMethod = (MethodSignature) point.getSignature();
-//        DataSource datasource = currentMethod.getMethod().getAnnotation(DataSource.class);
-//        DataSourceContextHolder.setDataSourceType(dataSourceName);
-//        log.info("设置数据源为->：" + dataSourceName);
-    }
+   /* before、after 和 around 来区别是在每个 joint point 之前、之后还是代替执行
+    aop执行顺序 @around(.proceed()) -> @Before -> @around -> @after -> @afterReturning
+    public void around(DBTypeEnum dbTypeEnum){
+        Signature signature = point.getSignature();
+        if (!(signature instanceof MethodSignature)) {
+            throw new IllegalArgumentException("该注解只能用于方法");
+        }
+        MethodSignature currentMethod = (MethodSignature) point.getSignature();
+        DataSource datasource = currentMethod.getMethod().getAnnotation(DataSource.class);
+        DataSourceContextHolder.setDataSourceType(dataSourceName);
+        log.info("设置数据源为->：" + dataSourceName);
+    }*/
 
     @After("cut()")
     public void after(){
