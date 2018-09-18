@@ -27,8 +27,6 @@ public class MultiSourceExAop implements Ordered {
 
     private Logger log = LoggerFactory.getLogger(this.getClass());
 
-    @Autowired
-    MutiDataSourceProperties mutiDataSourceProperties;
 
     @Pointcut(value = "@annotation(com.stylefeng.guns.core.mutidatasource.annotion.DataSource)")
     private void cut() {
@@ -48,13 +46,9 @@ public class MultiSourceExAop implements Ordered {
         Method currentMethod = target.getClass().getMethod(methodSignature.getName(), methodSignature.getParameterTypes());
 
         DataSource datasource = currentMethod.getAnnotation(DataSource.class);
-        if (datasource != null) {
-            DataSourceContextHolder.setDataSourceType(datasource.name());
-            log.debug("设置数据源为：" + datasource.name());
-        } else {
-            DataSourceContextHolder.setDataSourceType(mutiDataSourceProperties.getDataSourceNames()[0]);
-            log.debug("设置数据源为：dataSourceCurrent");
-        }
+
+        DataSourceContextHolder.setDataSourceType(datasource.value());
+        log.info("设置数据源为->：" + datasource.value());
 
         try {
             return point.proceed();

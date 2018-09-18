@@ -1,7 +1,7 @@
 package com.stylefeng.guns.modular.item.itemInit.controller;
 
 import com.stylefeng.guns.core.base.controller.BaseController;
-import com.stylefeng.guns.core.common.constant.DatasourceEnum;
+import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -65,7 +65,7 @@ public class ItemInitController extends BaseController {
      */
     @RequestMapping(value = "/list")
     @ResponseBody
-    @DataSource(name = DatasourceEnum.DATA_SOURCE_BIZ)
+    @DataSource(DBTypeEnum.item)
     public Object list(String condition) {
         return itemInitService.selectList(null);
     }

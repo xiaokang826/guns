@@ -1,5 +1,7 @@
 package com.stylefeng.guns.core.mutidatasource.annotion;
 
+import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
+
 import java.lang.annotation.*;
 
 /**
@@ -13,6 +15,6 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ ElementType.METHOD })
 public @interface DataSource {
-
-	String name() default "";
+	//String value() default "dataSourceGuns";
+	DBTypeEnum value() default DBTypeEnum.guns;
 }

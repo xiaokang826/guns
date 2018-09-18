@@ -1,7 +1,7 @@
 package com.stylefeng.guns.modular.item.itemConfig.controller;
 
 import com.stylefeng.guns.core.base.controller.BaseController;
-import com.stylefeng.guns.core.common.constant.DatasourceEnum;
+import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
 import com.stylefeng.guns.modular.system.model.ItemConfig;
 import org.springframework.stereotype.Controller;
@@ -61,7 +61,7 @@ public class ItemConfigController extends BaseController {
      */
     @RequestMapping(value = "/list")
     @ResponseBody
-//    @DataSource(name = DatasourceEnum.DATA_SOURCE_GUNS)
+    @DataSource(DBTypeEnum.item)
     public Object list(String condition) {
         return itemConfigService.selectList(null);
     }

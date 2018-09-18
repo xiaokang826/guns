@@ -15,10 +15,12 @@ public class DataSourceContextHolder {
      *
      * @param dataSourceType 数据库类型
      */
-    public static void setDataSourceType(String dataSourceType) {
-        contextHolder.set(dataSourceType);
+//    public static void setDataSourceType(String dataSourceType) {
+//        contextHolder.set(dataSourceType);
+//    }
+    public static void setDataSourceType(DBTypeEnum dbTypeEnum) {
+        contextHolder.set(dbTypeEnum.getValue());
     }
-
     /**
      * 获取数据源类型
      */
