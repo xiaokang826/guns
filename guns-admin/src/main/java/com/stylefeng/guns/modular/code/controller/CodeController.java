@@ -2,7 +2,7 @@ package com.stylefeng.guns.modular.code.controller;
 
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.config.properties.DruidProperties;
-import com.stylefeng.guns.core.config.properties.MutiDataSourceProperties;
+import com.stylefeng.guns.core.config.properties.MultiDataSourceProperties;
 import com.stylefeng.guns.generator.action.config.WebGeneratorConfig;
 import com.stylefeng.guns.generator.action.model.GenQo;
 import com.stylefeng.guns.modular.code.factory.DefaultTemplateFactory;
@@ -35,8 +35,8 @@ public class CodeController extends BaseController {
     @Autowired
     private DruidProperties druidProperties;
 
-    @Autowired //多数据源
-    private MutiDataSourceProperties mutiDataSourceProperties;
+//    @Autowired //多数据源
+//    private MultiDataSourceProperties multiDataSourceProperties;
 
     @Autowired
     private IMenuService menuService;
@@ -59,9 +59,9 @@ public class CodeController extends BaseController {
     @RequestMapping(value = "/generate", method = RequestMethod.POST)
     @ResponseBody
     public Object generate(GenQo genQo) {
-        genQo.setUrl(mutiDataSourceProperties.getUrl());
-        genQo.setUserName(mutiDataSourceProperties.getUsername());
-        genQo.setPassword(mutiDataSourceProperties.getPassword());
+//        genQo.setUrl(multiDataSourceProperties.getUrl());
+//        genQo.setUserName(multiDataSourceProperties.getUsername());
+//        genQo.setPassword(multiDataSourceProperties.getPassword());
         Menu menu = menuService.getMenusByName(genQo.getParentMenuName());
         genQo.setPcodeAndPcodes(new String[]{menu.getCode(),menu.getPcodes()});
         WebGeneratorConfig webGeneratorConfig = new WebGeneratorConfig(genQo);

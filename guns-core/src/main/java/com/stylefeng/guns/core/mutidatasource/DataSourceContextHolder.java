@@ -13,11 +13,8 @@ public class DataSourceContextHolder {
     /**
      * 设置数据源类型
      *
-     * @param dataSourceType 数据库类型
+     * @param dbTypeEnum 数据库类型
      */
-//    public static void setDataSourceType(String dataSourceType) {
-//        contextHolder.set(dataSourceType);
-//    }
     public static void setDataSourceType(DBTypeEnum dbTypeEnum) {
         contextHolder.set(dbTypeEnum.getValue());
     }

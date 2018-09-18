@@ -1,6 +1,5 @@
 package com.stylefeng.guns.core.mutidatasource.aop;
 
-import com.stylefeng.guns.core.config.properties.MutiDataSourceProperties;
 import com.stylefeng.guns.core.mutidatasource.DataSourceContextHolder;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -11,8 +10,6 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 

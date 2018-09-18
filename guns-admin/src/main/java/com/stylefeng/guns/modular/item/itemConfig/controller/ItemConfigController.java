@@ -61,7 +61,6 @@ public class ItemConfigController extends BaseController {
      */
     @RequestMapping(value = "/list")
     @ResponseBody
-    @DataSource(DBTypeEnum.item)
     public Object list(String condition) {
         return itemConfigService.selectList(null);
     }

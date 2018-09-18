@@ -44,15 +44,26 @@ spring:
     filters: wall,mergeStat
 
 #多数据源情况的配置
-guns:
-  muti-datasource:
-    open: true
+#guns:
+#  multi-datasource:
+#    open: true
+#    item:
+#      url: jdbc:mysql://10.0.0.117:3306/spring_boot?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+#      username: root
+#      password: root
+
+
+multi-datasource:
+  open: true
+  item:
     url: jdbc:mysql://10.0.0.117:3306/spring_boot?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
     password: root
-    dataSourceNames:
-      - dataSourceGuns
-      - dataSourceBiz
+  log:
+    url: jdbc:mysql://10.0.0.117:3306/teen_patti_gold_log?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+
 ---
 
 spring:

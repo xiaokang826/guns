@@ -8,7 +8,7 @@ import com.alibaba.druid.pool.DruidDataSource;
  * @author fengshuonan
  * @date 2017-08-16 10:02
  */
-public class MutiDataSourceProperties {
+public class MultiDataSourceProperties {
 
     private String url = "jdbc:mysql://127.0.0.1:3306/biz?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull";
 

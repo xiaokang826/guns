@@ -2,10 +2,7 @@ package com.stylefeng.guns.config.aop;
 
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.DataSourceContextHolder;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
-import org.aspectj.lang.annotation.Pointcut;
+import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.Ordered;
@@ -34,9 +31,11 @@ public class MultiSourceExAop implements Ordered {
 
     @Before("cut()")
     public void data(){
-        log.info("切换到item 数据源...");
-        DataSourceContextHolder.setDataSourceType(DBTypeEnum.item);
-        log.info("设置数据源为->：" + DBTypeEnum.item);
+        if(DataSourceContextHolder.getDataSourceType() == null) {
+            log.info("切换到item 数据源...");
+            DataSourceContextHolder.setDataSourceType(DBTypeEnum.item);
+            log.info("设置数据源为->：" + DBTypeEnum.item);
+        }
 //        around(DBTypeEnum.item);
     }
 
@@ -53,7 +52,8 @@ public class MultiSourceExAop implements Ordered {
         log.info("设置数据源为->：" + dataSourceName);
     }*/
 
-    @After("cut()")
+//    @After("cut()")
+    @AfterReturning("cut()")
     public void after(){
         log.debug("清空数据源信息！");
         DataSourceContextHolder.clearDataSourceType();

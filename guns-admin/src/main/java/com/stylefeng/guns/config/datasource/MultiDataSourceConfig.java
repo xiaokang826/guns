@@ -5,12 +5,14 @@ import com.baomidou.mybatisplus.plugins.OptimisticLockerInterceptor;
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 import com.stylefeng.guns.config.aop.MultiSourceExAop;
 import com.stylefeng.guns.core.config.properties.DruidProperties;
-import com.stylefeng.guns.core.config.properties.MutiDataSourceProperties;
+import com.stylefeng.guns.core.config.properties.MultiDataSourceProperties;
 import com.stylefeng.guns.core.datascope.DataScopeInterceptor;
+import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.DynamicDataSource;
 import org.mybatis.spring.annotation.MapperScan;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
@@ -30,7 +32,7 @@ import java.util.HashMap;
  * @Date 2017/5/20 21:58
  */
 @Configuration
-@ConditionalOnProperty(prefix = "guns.muti-datasource", name = "open", havingValue = "true")
+@ConditionalOnProperty(prefix = "multi-datasource", name = "open", havingValue = "true")
 //@ConditionalOnProperty(prefix = "guns.muti-datasource", name = "open", havingValue = "false", matchIfMissing = true)
 @EnableTransactionManagement(order = 2)
 @MapperScan(basePackages = {"com.stylefeng.guns.modular.*.dao","com.stylefeng.guns.multi.mapper"})
@@ -40,14 +42,15 @@ public class MultiDataSourceConfig {
     private final static Logger logger = LoggerFactory.getLogger("com.stylefeng");
 
     @Bean
-    @ConfigurationProperties(prefix = "guns.muti-datasource")
-    public MutiDataSourceProperties mutiDataSourceProperties() {
-        return new MutiDataSourceProperties();
+    @ConfigurationProperties(prefix = "multi-datasource.item")
+    public MultiDataSourceProperties itemDataSourceProperties() {
+        return new MultiDataSourceProperties();
     }
 
     @Bean
-    public MultiSourceExAop aop() {
-        return new MultiSourceExAop();
+    @ConfigurationProperties(prefix = "multi-datasource.log")
+    public MultiDataSourceProperties logDataSourceProperties() {
+        return new MultiDataSourceProperties();
     }
 
     /**
@@ -62,34 +65,40 @@ public class MultiDataSourceConfig {
     /**
      * 多数据源，第二个数据源
      */
-    private DruidDataSource bizDataSource(DruidProperties druidProperties, MutiDataSourceProperties mutiDataSourceProperties) {
+    private DruidDataSource bizDataSource(DruidProperties druidProperties, MultiDataSourceProperties multiDataSourceProperties) {
         DruidDataSource dataSource = new DruidDataSource();
         druidProperties.config(dataSource);
-        mutiDataSourceProperties.config(dataSource);
+        multiDataSourceProperties.config(dataSource);
         return dataSource;
     }
-
 
     /**
      * 多数据源连接池配置
      */
     @Bean
-    public DynamicDataSource mutiDataSource(DruidProperties druidProperties, MutiDataSourceProperties mutiDataSourceProperties) {
+    public DynamicDataSource mutiDataSource(DruidProperties druidProperties,
+                                            @Qualifier("itemDataSourceProperties") MultiDataSourceProperties itemDataSourceProperties,
+                                            @Qualifier("logDataSourceProperties") MultiDataSourceProperties logDataSourceProperties) {
 
         DruidDataSource dataSourceGuns = dataSource(druidProperties);
-        DruidDataSource bizDataSource = bizDataSource(druidProperties, mutiDataSourceProperties);
+        DruidDataSource itemDataSource = bizDataSource(druidProperties, itemDataSourceProperties);
+        DruidDataSource logDataSource = bizDataSource(druidProperties, logDataSourceProperties);
 
         try {
             dataSourceGuns.init();
-            bizDataSource.init();
+            itemDataSource.init();
+            logDataSource.init();
         } catch (SQLException sql) {
             sql.printStackTrace();
         }
 
         DynamicDataSource dynamicDataSource = new DynamicDataSource();
         HashMap<Object, Object> hashMap = new HashMap<>();
-        hashMap.put(mutiDataSourceProperties.getDataSourceNames()[0], dataSourceGuns);
-        hashMap.put(mutiDataSourceProperties.getDataSourceNames()[1], bizDataSource);
+        hashMap.put(DBTypeEnum.guns.getValue(), dataSourceGuns);
+        hashMap.put(DBTypeEnum.item.getValue(), itemDataSource);
+        hashMap.put(DBTypeEnum.log.getValue(), logDataSource);
+//        hashMap.put("guns", dataSourceGuns);
+//        hashMap.put("item", bizDataSource);
         dynamicDataSource.setTargetDataSources(hashMap);
         dynamicDataSource.setDefaultTargetDataSource(dataSourceGuns);
         return dynamicDataSource;
@@ -128,5 +137,10 @@ public class MultiDataSourceConfig {
     @Bean
     public DataSourceTransactionManager dataSourceTransactionManager(DynamicDataSource mutiDataSource) {
         return new DataSourceTransactionManager(mutiDataSource);
+    }
+
+    @Bean
+    public MultiSourceExAop aop() {
+        return new MultiSourceExAop();
     }
 }
