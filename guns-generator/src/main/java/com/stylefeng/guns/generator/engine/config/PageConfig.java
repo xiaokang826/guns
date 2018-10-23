@@ -18,11 +18,11 @@ public class PageConfig {
 
     public void init() {
 //        pagePathTemplate = "\\src\\main\\webapp\\WEB-INF\\view\\" + contextConfig.getModuleName() + "\\{}\\{}.html";
-        pagePathTemplate = "\\src\\main\\webapp\\WEB-INF\\view\\" + contextConfig.getModuleName() + "\\{}.html";
-        pageAddPathTemplate = "\\src\\main\\webapp\\WEB-INF\\view\\" + contextConfig.getModuleName() + "\\{}_add.html";
-        pageEditPathTemplate = "\\src\\main\\webapp\\WEB-INF\\view\\" + contextConfig.getModuleName() + "\\{}_edit.html";
-        pageJsPathTemplate = "\\src\\main\\webapp\\static\\modular\\" + contextConfig.getModuleName() + "\\{}.js";
-        pageInfoJsPathTemplate = "\\src\\main\\webapp\\static\\modular\\" + contextConfig.getModuleName() + "\\{}_info.js";
+        pagePathTemplate = "\\src\\main\\webapp\\WEB-INF\\view\\" + contextConfig.getModuleName() +"\\"+ contextConfig.getBizEnName() + "\\{}.html";
+        pageAddPathTemplate = "\\src\\main\\webapp\\WEB-INF\\view\\" + contextConfig.getModuleName() +"\\"+ contextConfig.getBizEnName() + "\\{}_add.html";
+        pageEditPathTemplate = "\\src\\main\\webapp\\WEB-INF\\view\\" + contextConfig.getModuleName() +"\\"+ contextConfig.getBizEnName() + "\\{}_edit.html";
+        pageJsPathTemplate = "\\src\\main\\webapp\\static\\modular\\" + contextConfig.getModuleName() +"\\"+ contextConfig.getBizEnName() + "\\{}.js";
+        pageInfoJsPathTemplate = "\\src\\main\\webapp\\static\\modular\\" + contextConfig.getModuleName() +"\\"+ contextConfig.getBizEnName() + "\\{}_info.js";
     }
 
     public String getPagePathTemplate() {

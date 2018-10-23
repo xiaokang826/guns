@@ -32,7 +32,6 @@ com\stylefeng\guns\core\util\ToolUtil.class
 com\stylefeng\guns\core\config\DefaultMultiConfig.class
 com\stylefeng\guns\core\util\SqlUtil.class
 com\stylefeng\guns\core\util\SpringContextHolder.class
-com\stylefeng\guns\core\config\properties\MutiDataSourceProperties.class
 com\stylefeng\guns\core\cache\ILoader.class
 com\stylefeng\guns\core\CoreFlag.class
 com\stylefeng\guns\core\qr\MatrixToImageConfig.class
@@ -51,10 +50,12 @@ com\stylefeng\guns\core\mutidatasource\DataSourceContextHolder.class
 com\stylefeng\guns\core\support\DateTimeKit.class
 com\stylefeng\guns\core\aop\BaseControllerExceptionHandler.class
 com\stylefeng\guns\core\base\controller\GunsErrorView.class
+com\stylefeng\guns\core\mutidatasource\DBTypeEnum.class
 com\stylefeng\guns\core\support\DateTimeKit$2.class
 com\stylefeng\guns\core\util\IdGenerator.class
 com\stylefeng\guns\core\config\properties\DruidProperties.class
 com\stylefeng\guns\core\support\BasicType.class
+com\stylefeng\guns\core\config\properties\MultiDataSourceProperties.class
 com\stylefeng\guns\core\datascope\DataScope.class
 com\stylefeng\guns\core\mutidatasource\annotion\DataSource.class
 com\stylefeng\guns\core\cache\CacheKit.class

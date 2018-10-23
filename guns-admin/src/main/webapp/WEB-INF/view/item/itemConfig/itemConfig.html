@@ -13,6 +13,29 @@
                                 <#NameCon id="condition" name="名称" />
                             </div>
                             <div class="col-sm-3">
+                                <#NameCon id="game" name="游戏" />
+                            </div>
+                            <div class="col-sm-3">
+                                <#SelectCon id="type" name="日志类型" >
+                                    <option value="">全部</option>
+                                    <option value="1">货币</option>
+                                    <option value="2">体力</option>
+                                    <option value="3">阳光</option>
+                                    <option value="4">普通物品</option>
+                                    <option value="5">限时物品</option>
+                                    <option value="6">皮肤</option>
+                                    <option value="7">限时头像</option>
+                                    <option value="8">限时NPC</option>
+                                    <option value="9">限时礼物</option>
+                                    <option value="10">头像</option>
+                                    <option value="11">NPC</option>
+                                    <option value="12">礼物</option>
+                                </#SelectCon>
+                            </div>
+                            <div class="col-sm-3">
+                                <#TimeCon id="time" name="开始时间" isTime="true" pattern="YYYY-MM-DD" />
+                            </div>
+                            <div class="col-sm-3">
                                 <#button name="搜索" icon="fa-search" clickFun="ItemConfig.search()"/>
                             </div>
                         </div>
@@ -35,4 +58,9 @@
     </div>
 </div>
 <script src="${ctxPath}/static/modular/item/itemConfig/itemConfig.js"></script>
+<script>
+    laydate.render({
+        elem: '#time'
+    });
+</script>
 @}

@@ -90,6 +90,8 @@ public class MenuServiceImpl extends ServiceImpl<MenuMapper, Menu> implements IM
 
     @Override
     public Menu getMenusByName(String menuName) {
-        return this.menuMapper.getMenusByName("%" + menuName + "%");
+        //如果采用模糊查询 记得解开mapper文件里的注释
+        //return this.menuMapper.getMenusByName("%" + menuName + "%");
+        return this.menuMapper.getMenusByName(menuName);
     }
 }

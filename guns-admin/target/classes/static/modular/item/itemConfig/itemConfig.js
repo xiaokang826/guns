@@ -20,7 +20,7 @@ ItemConfig.initColumn = function () {
             {title: '游戏', field: 'gameId', visible: true, align: 'center', valign: 'middle'},
             {title: '物品icon', field: 'itemIcon', visible: true, align: 'center', valign: 'middle'},
             {title: '物品名称', field: 'itemName', visible: true, align: 'center', valign: 'middle'},
-            {title: '物品类型', field: 'itemType', visible: true, align: 'center', valign: 'middle'},
+            {title: '物品类型(1:货币类型2：体力类型3：阳光类型4：普通物品5：限时物品6：皮肤7：限时头像8：限时NPC9：限时礼物10：头像11：NPC12：礼物)', field: 'itemType', visible: true, align: 'center', valign: 'middle'},
             {title: '价值', field: 'price', visible: true, align: 'center', valign: 'middle'},
             {title: '标签', field: 'tag', visible: true, align: 'center', valign: 'middle'},
             {title: '过期时间', field: 'timeOut', visible: true, align: 'center', valign: 'middle'}
@@ -95,6 +95,10 @@ ItemConfig.delete = function () {
 ItemConfig.search = function () {
     var queryData = {};
     queryData['condition'] = $("#condition").val();
+    queryData['game'] = $("#game").val();
+    queryData['type'] = $("#type").val();
+    queryData['time'] = $("#time").val();
+    console.log(queryData['time'])
     ItemConfig.table.refresh({query: queryData});
 };
 

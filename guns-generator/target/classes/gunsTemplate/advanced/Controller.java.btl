@@ -14,7 +14,7 @@ import ${import};
 @RequestMapping("/${context.bizEnName}")
 public class ${context.bizEnBigName}Controller extends BaseController {
 
-    private String PREFIX = "/${context.moduleName}/";
+    private String PREFIX = "/${context.moduleName}/${context.bizEnName}/";
 
     @Autowired
     private I${context.entityName}Service ${context.bizEnName}Service;

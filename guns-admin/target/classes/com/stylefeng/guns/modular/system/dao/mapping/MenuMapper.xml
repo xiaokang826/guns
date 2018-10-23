@@ -174,8 +174,13 @@
         order by levels,num asc
     </select>
 
-    <select id="getMenusByName" resultType="menu">
+    <!--<select id="getMenusByName" resultType="menu">
         select * from sys_menu
         where name like #{menuName}
+    </select>-->
+
+    <select id="getMenusByName" resultType="menu">
+        select * from sys_menu
+        where name = #{menuName}
     </select>
 </mapper>

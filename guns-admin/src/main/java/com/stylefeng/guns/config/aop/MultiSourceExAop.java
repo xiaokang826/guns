@@ -26,7 +26,7 @@ public class MultiSourceExAop implements Ordered {
 //    @Pointcut("execution(* com.baomidou.mybatisplus.service.IService.~~*(..)) ")
     //此处需要注意：controller里所有的方法都将会切换数据源
     //解决办法：在方法使用注解切换数据源(此处需要优化)
-    @Pointcut("execution(* com.stylefeng.guns.modular.item..*.*(..)) ")
+    @Pointcut("execution(* com.stylefeng.guns.modular.item.controller..*.*(..)) ")
     private void cut() {}
 
     @Before("cut()")

@@ -8,8 +8,8 @@
 			<div class="row">
 				<div class="col-sm-6 b-r">
 					<#input id="name" name="名称" underline="true" />
-					<#input id="code" name="菜单编号" underline="true" />
-					<#input id="pcodeName" name="父级编号" underline="true"
+					<#input id="code" name="菜单英文(module)" underline="true" />
+					<#input id="pcodeName" name="父级菜单" underline="true"
 							hidden="pcode" readonly="readonly"
 							clickFun="MenuInfoDlg.showMenuSelectTree(); return false;"
 							style="background-color: #ffffff !important;"
@@ -20,7 +20,7 @@
 					</#select>
 				</div>
 				<div class="col-sm-6">
-					<#input id="url" name="请求地址" underline="true" />
+					<#input id="url" name="访问路径(/module)" underline="true" />
 					<#input id="num" name="排序" underline="true" />
 					<#input id="icon" name="图标" underline="false" />
 				</div>

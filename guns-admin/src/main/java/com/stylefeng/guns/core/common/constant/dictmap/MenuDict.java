@@ -14,8 +14,8 @@ public class MenuDict extends AbstractDictMap {
     public void init() {
         put("menuId","菜单id");
         put("id","菜单id");
-        put("code","菜单编号");
-        put("pcode","菜单父编号");
+        put("code","菜单英文名");
+        put("pcode","父级菜单");
         put("name","菜单名称");
         put("icon","菜单图标");
         put("url","url地址");

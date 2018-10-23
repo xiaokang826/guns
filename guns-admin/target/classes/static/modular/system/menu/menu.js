@@ -16,9 +16,9 @@ Menu.initColumn = function () {
         {field: 'selectItem', radio: true},
         {title: 'id', field: 'id', visible: false, align: 'center', valign: 'middle'},
         {title: '菜单名称', field: 'name', align: 'center', valign: 'middle', sortable: true},
-        {title: '菜单编号', field: 'code', align: 'center', valign: 'middle', sortable: true},
-        {title: '菜单父编号', field: 'pcode', align: 'center', valign: 'middle', sortable: true},
-        {title: '请求地址', field: 'url', align: 'center', valign: 'middle', sortable: true},
+        {title: '菜单英文名(module)', field: 'code', align: 'center', valign: 'middle', sortable: true},
+        {title: '父级菜单', field: 'pcode', align: 'center', valign: 'middle', sortable: true},
+        {title: '访问路径(/module)', field: 'url', align: 'center', valign: 'middle', sortable: true},
         {title: '排序', field: 'num', align: 'center', valign: 'middle', sortable: true},
         {title: '层级', field: 'levels', align: 'center', valign: 'middle', sortable: true},
         {title: '是否是菜单', field: 'isMenuName', align: 'center', valign: 'middle', sortable: true},
@@ -101,7 +101,6 @@ Menu.search = function () {
     var queryData = {};
     queryData['menuName'] = $("#menuName").val();
     queryData['level'] = $("#level").val();
-
     Menu.table.refresh({query: queryData});
 }
 

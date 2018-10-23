@@ -16,6 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.UnsupportedEncodingException;
+import java.util.Map;
 
 public class BaseController {
 
@@ -53,6 +54,28 @@ public class BaseController {
 
     protected Integer getSystemInvokCount() {
         return (Integer) this.getHttpServletRequest().getServletContext().getAttribute("systemCount");
+    }
+
+    /**
+     * 向指定URL发送GET方法的请求
+     *
+     * @param url 发送请求的URL
+     * @param param 请求参数
+     * @return URL 所代表远程资源的响应结果
+     */
+    protected String sendGet(String url, Map<String, String> param){
+        return HttpKit.sendGet(url,param);
+    }
+
+    /**
+     * 向指定 URL 发送POST方法的请求
+     *
+     * @param url 发送请求的 URL
+     * @param param  请求参数
+     * @return 所代表远程资源的响应结果
+     */
+    protected String sendPost(String url, Map<String, String> param){
+        return HttpKit.sendPost(url,param);
     }
 
     /**

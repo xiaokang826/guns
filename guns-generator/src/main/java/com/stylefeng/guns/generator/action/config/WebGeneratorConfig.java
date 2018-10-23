@@ -55,9 +55,9 @@ public class WebGeneratorConfig extends AbstractGeneratorConfig {
         strategyConfig.setInclude(new String[]{genQo.getTableName()});
         strategyConfig.setNaming(NamingStrategy.underline_to_camel);
         packageConfig.setParent(null);
-        packageConfig.setEntity(genQo.getProjectPackage() + ".modular.system.model");
-        packageConfig.setMapper(genQo.getProjectPackage() + ".modular.system.dao");
-        packageConfig.setXml(genQo.getProjectPackage() + ".modular.system.dao.mapping");
+        packageConfig.setEntity(genQo.getProjectPackage() + ".modular."+genQo.getModuleName()+".model");
+        packageConfig.setMapper(genQo.getProjectPackage() + ".modular."+genQo.getModuleName()+".dao");
+        packageConfig.setXml(genQo.getProjectPackage() + ".modular."+genQo.getModuleName()+".dao.mapping");
 
         /**
          * 业务代码配置
@@ -65,6 +65,7 @@ public class WebGeneratorConfig extends AbstractGeneratorConfig {
         contextConfig.setBizChName(genQo.getBizName());
         contextConfig.setModuleName(genQo.getModuleName());
         contextConfig.setProjectPath(genQo.getProjectPath());//写自己项目的绝对路径
+        contextConfig.setModelPackageName("com.stylefeng.guns.modular."+genQo.getModuleName()+".model");
         if(ToolUtil.isEmpty(genQo.getIgnoreTabelPrefix())){
             String entityName = StrKit.toCamelCase(genQo.getTableName());
             contextConfig.setEntityName(StrKit.firstCharToUpperCase(entityName));

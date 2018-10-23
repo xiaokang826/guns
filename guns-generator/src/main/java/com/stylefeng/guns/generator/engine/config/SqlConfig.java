@@ -41,7 +41,7 @@ public class SqlConfig{
         }
 
         //根据父菜单查询数据库中的pcode和pcodes
-//        String[] pcodeAndPcodes = getPcodeAndPcodes();
+        String[] pcodeAndPcodes = getPcodeAndPcodes();
         if (pcodeAndPcodes == null) {
             System.err.println("父级菜单名称输入有误!!!!");
             return;

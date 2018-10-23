@@ -4,7 +4,7 @@ package com.stylefeng.guns.generator.engine.config;
 import com.stylefeng.guns.core.util.ToolUtil;
 
 /**
- * 全局配置
+ * 全局配置 此处的所有配置都只是默认值 生成时根据页面的值来改变
  *
  * @author fengshuonan
  * @date 2017-05-08 20:21
@@ -15,7 +15,7 @@ public class ContextConfig {
     private String projectPath = "D:\\blabla";
     private String bizChName;   //业务名称
     private String bizEnName;   //业务英文名称(类名)
-    private String bizEnBigName;//业务英文名称(大写)
+    private String bizEnBigName;//业务英文名称(首字母大写)
     private String moduleName = "item";  //模块名称
 
     private String proPackage = "com.stylefeng.guns.admin";
@@ -39,8 +39,8 @@ public class ContextConfig {
         if (entityName == null) {
             entityName = bizEnBigName;
         }
-        modelPackageName = proPackage + "." + "modular.system.model";
-        modelMapperPackageName = proPackage + "." + "modular.system.dao";
+//        modelPackageName = proPackage + "." + "modular.system.model";
+//        modelMapperPackageName = proPackage + "." + "modular.system.dao";
     }
 
     public String getBizEnBigName() {
