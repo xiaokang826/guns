@@ -14,10 +14,10 @@ var ItemInit = {
 ItemInit.initColumn = function () {
     return [
         {field: 'selectItem', radio: true},
-            {title: 'ID', field: 'id', visible: true, align: 'center', valign: 'middle'},
-            {title: '物品id', field: 'itemId', visible: true, align: 'center', valign: 'middle'},
-            {title: '所属游戏', field: 'gameId', visible: true, align: 'center', valign: 'middle'},
-            {title: '数量', field: 'num', visible: true, align: 'center', valign: 'middle'}
+            {title: 'ID', field: 'id', visible: true, align: 'center', valign: 'middle',sortable: true},
+            {title: '物品id', field: 'itemId', visible: true, align: 'center', valign: 'middle',sortable: true},
+            {title: '所属游戏', field: 'gameId', visible: true, align: 'center', valign: 'middle',sortable: true},
+            {title: '数量', field: 'num', visible: true, align: 'center', valign: 'middle',sortable: true}
     ];
 };
 
@@ -72,14 +72,17 @@ ItemInit.openItemInitDetail = function () {
  */
 ItemInit.delete = function () {
     if (this.check()) {
-        var ajax = new $ax(Feng.ctxPath + "/itemInit/delete", function (data) {
-            Feng.success("删除成功!");
-            ItemInit.table.refresh();
-        }, function (data) {
-            Feng.error("删除失败!" + data.responseJSON.message + "!");
-        });
-        ajax.set("itemInitId",this.seItem.id);
-        ajax.start();
+        var operation = function() {
+            var ajax = new $ax(Feng.ctxPath + "/itemInit/delete", function (data) {
+                Feng.success("删除成功!");
+                ItemInit.table.refresh();
+            }, function (data) {
+                Feng.error("删除失败!" + data.responseJSON.message + "!");
+            });
+            ajax.set("itemInitId",ItemInit.seItem.id);
+            ajax.start();
+        };
+        Feng.confirm("是否删除ID " + ItemInit.seItem.id + "?",operation);
     }
 };
 

@@ -45,7 +45,47 @@ public class ItemConfigWarpper extends BaseControllerWarpper {
      */
     @Override
     public void warpTheMap(Map<String, Object> map) {
+        String args = "";
+        switch ((Integer) map.get("itemType")) {
+            case 1:
+                args = "货币";
+                break;
+            case 2:
+                args = "体力";
+                break;
+            case 3:
+                args = "阳光";
+                break;
+            case 4:
+                args = "普通物品";
+                break;
+            case 5:
+                args = "限时物品";
+                break;
+            case 6:
+                args = "皮肤";
+                break;
+            case 7:
+                args = "限时头像";
+                break;
+            case 8:
+                args = "限时NPC";
+                break;
+            case 9:
+                args = "限时礼物";
+                break;
+            case 10:
+                args = "头像";
+                break;
+            case 11:
+                args = "NPC";
+                break;
+            case 12:
+                args = "礼物";
+                break;
+        }
         //map.put("status", 开);
+        map.put("itemType",args);
+        map.put("gameId",(Integer)map.get("gameId") == 1001 ? "小游戏" : "三张");
     }
-
 }

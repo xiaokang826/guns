@@ -5,26 +5,44 @@
 
             <div class="row">
                 <div class="col-sm-6 b-r">
-                            <#input id="id" name="ID" underline="true"/>
-                            <#input id="details" name="描述" underline="true"/>
-                            <#input id="extraPrice" name="额外价值" underline="true"/>
-                            <#input id="gameId" name="游戏" underline="true"/>
-                            <#input id="itemIcon" name="物品icon"/>
+                    <#input id="id" name="ID" underline="true"/>
+                    <#input id="details" name="描述" underline="true"/>
+                    <#input id="extraPrice" name="额外价值" underline="true"/>
+                    <#select id="gameId" name="游戏" underline="true">
+                        <option value="1001">小游戏</option>
+                        <option value="1002">三张</option>
+                    </#select>
+                    <#input id="itemIcon" name="物品icon"/>
                 </div>
 
                 <div class="col-sm-6">
-                            <#input id="itemName" name="物品名称" underline="true"/>
-                            <#input id="itemType" name="物品类型(1:货币类型2：体力类型3：阳光类型4：普通物品5：限时物品6：皮肤7：限时头像8：限时NPC9：限时礼物10：头像11：NPC12：礼物)" underline="true"/>
-                            <#input id="price" name="价值" underline="true"/>
-                            <#input id="tag" name="标签" underline="true"/>
-                            <#input id="timeOut" name="过期时间" underline="true"/>
+                    <#input id="itemName" name="物品名称" underline="true"/>
+                    <#select id="itemType" name="物品类型" underline="true">
+                        <option value="1">货币</option>
+                        <option value="2">体力</option>
+                        <option value="3">阳光</option>
+                        <option value="4">普通物品</option>
+                        <option value="5">限时物品</option>
+                        <option value="6">皮肤</option>
+                        <option value="7">限时头像</option>
+                        <option value="8">限时NPC</option>
+                        <option value="9">限时礼物</option>
+                        <option value="10">头像</option>
+                        <option value="11">NPC</option>
+                        <option value="12">礼物</option>
+                    </#select>
+                    <#input id="price" name="价值" underline="true"/>
+                    <#input id="tag" name="标签" underline="true"/>
+                    <#input id="timeOut" name="过期时间" underline="true"/>
                 </div>
             </div>
 
             <div class="row btn-group-m-t">
                 <div class="col-sm-10">
-                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="ItemConfigInfoDlg.addSubmit()"/>
-                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="ItemConfigInfoDlg.close()"/>
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check"
+                    clickFun="ItemConfigInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser"
+                    clickFun="ItemConfigInfoDlg.close()"/>
                 </div>
             </div>
         </div>

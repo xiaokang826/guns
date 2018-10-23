@@ -98,7 +98,6 @@ MgrUser.roleAssign = function () {
  */
 MgrUser.delMgrUser = function () {
     if (this.check()) {
-
         var operation = function(){
             var userId = MgrUser.seItem.id;
             var ajax = new $ax(Feng.ctxPath + "/mgr/delete", function () {
@@ -110,7 +109,6 @@ MgrUser.delMgrUser = function () {
             ajax.set("userId", userId);
             ajax.start();
         };
-
         Feng.confirm("是否删除用户" + MgrUser.seItem.account + "?",operation);
     }
 };

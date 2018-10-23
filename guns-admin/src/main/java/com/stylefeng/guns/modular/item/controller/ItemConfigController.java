@@ -65,7 +65,8 @@ public class ItemConfigController extends BaseController {
     @ResponseBody
     public Object list(String condition,String game,String type,String time) {
         System.out.println(condition+"=="+game+"=="+type+"=="+time);
-        return this.itemConfigService.selectItemConfig(condition,game,type);
+        List<Map<String,Object>> list = this.itemConfigService.selectItemConfig(condition,game,type);
+        return super.warpObject(new ItemConfigWarpper(list));
 //        return itemConfigService.selectList(null);
     }
 

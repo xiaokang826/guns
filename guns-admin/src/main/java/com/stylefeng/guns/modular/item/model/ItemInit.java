@@ -13,7 +13,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author panghu
- * @since 2018-10-22
+ * @since 2018-10-23
  */
 @TableName("item_init")
 public class ItemInit extends Model<ItemInit> {
