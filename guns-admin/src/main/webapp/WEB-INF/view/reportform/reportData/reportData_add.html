@@ -1,0 +1,49 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                            <#input id="id" name="索引" underline="true"/>
+                            <#input id="accountChangeTime" name="账变时间" underline="true"/>
+                            <#input id="userName" name="用户名" underline="true"/>
+                            <#input id="gameName" name="游戏类型" underline="true"/>
+                            <#input id="roomType" name="房间类型" underline="true"/>
+                            <#input id="tableNumber" name="桌子号" underline="true"/>
+                            <#input id="seatNumber" name="座位号" underline="true"/>
+                            <#input id="leisure" name="庄闲" underline="true"/>
+                            <#input id="initialAmount" name="初始金额" underline="true"/>
+                            <#input id="totalBet" name="总投注" underline="true"/>
+                            <#input id="validBet" name="有效投注额" underline="true"/>
+                            <#input id="winLoseAmount" name="输赢金额"/>
+                </div>
+
+                <div class="col-sm-6">
+                            <#input id="boardNumber" name="局号" underline="true"/>
+                            <#input id="gameResult" name="游戏结果" underline="true"/>
+                            <#input id="gameStartTime" name="游戏开始时间" underline="true"/>
+                            <#input id="gameEndTime" name="游戏结束时间" underline="true"/>
+                            <#input id="logDetails" name="对局日志详情" underline="true"/>
+                            <#input id="orderNumber" name="订单号" underline="true"/>
+                            <#input id="orderDetails" name="订单详情" underline="true"/>
+                            <#input id="accountType" name="账变类型" underline="true"/>
+                            <#input id="amountBeforeChange" name="变前金额" underline="true"/>
+                            <#input id="accountChangeAmount" name="账变金额" underline="true"/>
+                            <#input id="amountAfterChange" name="变后金额" underline="true"/>
+                            <#input id="operator" name="操作人" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="ReportDataInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="ReportDataInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/reportform/reportData/reportData_info.js"></script>
+@}

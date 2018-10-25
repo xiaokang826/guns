@@ -28,11 +28,17 @@
         <result column="price" property="price" />
         <result column="tag" property="tag" />
         <result column="time_out" property="timeOut" />
+        <result column="is_give" property="isGive" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
         id, details, extra_price, game_id, item_icon, item_name, item_type, price, tag, time_out
+        <!-- 此处是关联查询demo -->
+        ,case when (
+        select count(*)
+        from item_init
+        where item_id = item_config.id)>0 then 1 else 0 end as is_give
     </sql>
 
     <!--<select id="selectItemConfig" resultType="map">-->

@@ -53,6 +53,12 @@ public class MultiDataSourceConfig {
         return new MultiDataSourceProperties();
     }
 
+    @Bean
+    @ConfigurationProperties(prefix = "multi-datasource.report")
+    public MultiDataSourceProperties reportDataSourceProperties() {
+        return new MultiDataSourceProperties();
+    }
+
     /**
      * guns的数据源
      */
@@ -63,7 +69,7 @@ public class MultiDataSourceConfig {
     }
 
     /**
-     * 多数据源，第二个数据源
+     * 多数据源
      */
     private DruidDataSource bizDataSource(DruidProperties druidProperties, MultiDataSourceProperties multiDataSourceProperties) {
         DruidDataSource dataSource = new DruidDataSource();
@@ -78,16 +84,19 @@ public class MultiDataSourceConfig {
     @Bean
     public DynamicDataSource mutiDataSource(DruidProperties druidProperties,
                                             @Qualifier("itemDataSourceProperties") MultiDataSourceProperties itemDataSourceProperties,
-                                            @Qualifier("logDataSourceProperties") MultiDataSourceProperties logDataSourceProperties) {
+                                            @Qualifier("logDataSourceProperties") MultiDataSourceProperties logDataSourceProperties,
+                                            @Qualifier("reportDataSourceProperties") MultiDataSourceProperties reportDataSourceProperties) {
 
         DruidDataSource dataSourceGuns = dataSource(druidProperties);
         DruidDataSource itemDataSource = bizDataSource(druidProperties, itemDataSourceProperties);
         DruidDataSource logDataSource = bizDataSource(druidProperties, logDataSourceProperties);
+        DruidDataSource reportDataSource = bizDataSource(druidProperties, reportDataSourceProperties);
 
         try {
             dataSourceGuns.init();
             itemDataSource.init();
             logDataSource.init();
+            reportDataSource.init();
         } catch (SQLException sql) {
             sql.printStackTrace();
         }
@@ -97,8 +106,7 @@ public class MultiDataSourceConfig {
         hashMap.put(DBTypeEnum.guns.getValue(), dataSourceGuns);
         hashMap.put(DBTypeEnum.item.getValue(), itemDataSource);
         hashMap.put(DBTypeEnum.log.getValue(), logDataSource);
-//        hashMap.put("guns", dataSourceGuns);
-//        hashMap.put("item", bizDataSource);
+        hashMap.put(DBTypeEnum.report.getValue(), reportDataSource);
         dynamicDataSource.setTargetDataSources(hashMap);
         dynamicDataSource.setDefaultTargetDataSource(dataSourceGuns);
         return dynamicDataSource;

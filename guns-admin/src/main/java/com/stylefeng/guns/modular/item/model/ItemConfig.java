@@ -68,6 +68,10 @@ public class ItemConfig extends Model<ItemConfig> {
     @TableField("time_out")
     private Integer timeOut;
 
+    /**
+     * 是否赠送
+     */
+    private Integer isGive;
 
     public Integer getId() {
         return id;
@@ -152,6 +156,14 @@ public class ItemConfig extends Model<ItemConfig> {
     @Override
     protected Serializable pkVal() {
         return this.id;
+    }
+
+    public Integer getIsGive() {
+        return isGive;
+    }
+
+    public void setIsGive(Integer isGive) {
+        this.isGive = isGive;
     }
 
     @Override

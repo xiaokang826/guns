@@ -22,6 +22,12 @@
       "name": "multi-datasource.log",
       "sourceMethod": "logDataSourceProperties()",
       "type": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.config.datasource.MultiDataSourceConfig",
+      "name": "multi-datasource.report",
+      "sourceMethod": "reportDataSourceProperties()",
+      "type": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties"
     }
   ],
   "properties": [
@@ -148,6 +154,36 @@
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
       "name": "multi-datasource.log.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
       "type": "java.lang.String"
     }
   ]

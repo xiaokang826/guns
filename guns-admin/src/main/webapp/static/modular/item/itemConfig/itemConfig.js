@@ -23,7 +23,8 @@ ItemConfig.initColumn = function () {
             {title: '物品类型(1:货币类型2：体力类型3：阳光类型4：普通物品5：限时物品6：皮肤7：限时头像8：限时NPC9：限时礼物10：头像11：NPC12：礼物)', field: 'itemType', visible: true, align: 'center', valign: 'middle',sortable: true},
             {title: '价值', field: 'price', visible: true, align: 'center', valign: 'middle',sortable: true},
             {title: '标签', field: 'tag', visible: true, align: 'center', valign: 'middle',sortable: true},
-            {title: '过期时间', field: 'timeOut', visible: true, align: 'center', valign: 'middle',sortable: true}
+            {title: '过期时间', field: 'timeOut', visible: true, align: 'center', valign: 'middle',sortable: true},
+            {title: '是否赠送', field: 'isGive', visible: true, align: 'center', valign: 'middle',sortable: true}
     ];
 };
 

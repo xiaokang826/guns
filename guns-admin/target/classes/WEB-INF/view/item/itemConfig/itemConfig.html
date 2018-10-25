@@ -33,10 +33,10 @@
                                 </#SelectCon>
                             </div>
                             <div class="col-sm-3">
-                                <#TimeCon id="time" name="开始时间" isTime="true" pattern="YYYY-MM-DD" />
+                                <#button name="搜索" icon="fa-search" clickFun="ItemConfig.search()"/>
                             </div>
                             <div class="col-sm-3">
-                                <#button name="搜索" icon="fa-search" clickFun="ItemConfig.search()"/>
+                                <#TimeCon id="time" name="开始时间" isTime="true" pattern="YYYY-MM-DD" />
                             </div>
                         </div>
                         <div class="hidden-xs" id="ItemConfigTableToolbar" role="group">

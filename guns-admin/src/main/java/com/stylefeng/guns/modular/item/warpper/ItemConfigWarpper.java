@@ -87,5 +87,6 @@ public class ItemConfigWarpper extends BaseControllerWarpper {
         //map.put("status", 开);
         map.put("itemType",args);
         map.put("gameId",(Integer)map.get("gameId") == 1001 ? "小游戏" : "三张");
+        map.put("isGive",(Long)map.get("isGive") == 1 ? "是" : "否");
     }
 }

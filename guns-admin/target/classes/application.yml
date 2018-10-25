@@ -40,7 +40,7 @@ spring:
     url: jdbc:mysql://10.0.0.117:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
     password: root
-    db-name: spring_boot #用来搜集数据库的所有表(生成代码)
+    db-name: demo #用来搜集数据库的所有表(生成代码)
     filters: wall,mergeStat
 
 #多数据源情况的配置
@@ -61,6 +61,10 @@ multi-datasource:
     password: root
   log:
     url: jdbc:mysql://10.0.0.117:3306/teen_patti_gold_log?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+  report:
+    url: jdbc:mysql://10.0.0.117:3306/demo?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
     password: root
 

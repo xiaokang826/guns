@@ -71,12 +71,10 @@ OptLog.delLog = function () {
  */
 OptLog.formParams = function() {
     var queryData = {};
-
     queryData['logName'] = $("#logName").val();
     queryData['beginTime'] = $("#beginTime").val();
     queryData['endTime'] = $("#endTime").val();
     queryData['logType'] = $("#logType").val();
-
     return queryData;
 }
 
@@ -84,7 +82,6 @@ OptLog.formParams = function() {
  * 查询日志列表
  */
 OptLog.search = function () {
-
     OptLog.table.refresh({query: OptLog.formParams()});
 };
 

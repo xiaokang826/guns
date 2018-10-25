@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.reportform.dao.ReportDataMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.reportform.model.ReportData">
+        <id column="id" property="id" />
+        <result column="account_change_time" property="accountChangeTime" />
+        <result column="user_name" property="userName" />
+        <result column="game_name" property="gameName" />
+        <result column="room_type" property="roomType" />
+        <result column="table_number" property="tableNumber" />
+        <result column="seat_number" property="seatNumber" />
+        <result column="leisure" property="leisure" />
+        <result column="initial_amount" property="initialAmount" />
+        <result column="total_bet" property="totalBet" />
+        <result column="valid_bet" property="validBet" />
+        <result column="win_lose_amount" property="winLoseAmount" />
+        <result column="board_number" property="boardNumber" />
+        <result column="game_result" property="gameResult" />
+        <result column="game_start_time" property="gameStartTime" />
+        <result column="game_end_time" property="gameEndTime" />
+        <result column="log_details" property="logDetails" />
+        <result column="order_number" property="orderNumber" />
+        <result column="order_details" property="orderDetails" />
+        <result column="account_type" property="accountType" />
+        <result column="amount_before_change" property="amountBeforeChange" />
+        <result column="account_change_amount" property="accountChangeAmount" />
+        <result column="amount_after_change" property="amountAfterChange" />
+        <result column="operator" property="operator" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, account_change_time, user_name, game_name, room_type, table_number, seat_number, leisure, initial_amount, total_bet, valid_bet, win_lose_amount, board_number, game_result, game_start_time, game_end_time, log_details, order_number, order_details, account_type, amount_before_change, account_change_amount, amount_after_change, operator
+    </sql>
+
+</mapper>

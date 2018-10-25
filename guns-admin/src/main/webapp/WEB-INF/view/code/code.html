@@ -29,7 +29,7 @@
                                     <#input id="bizName" name="业务名称" />
                                 </div>
                                 <div class="col-sm-3">
-                                    <#input id="moduleName" name="模块名称" value="${params.moduleName}"/>
+                                    <#input id="moduleName" name="模块名称(English)" value="${params.moduleName}"/>
                                 </div>
                                 <div class="col-sm-3">
                                     <#input id="parentMenuName" name="父级菜单名称" underline="false" value="${params.parentMenuName}"
@@ -57,6 +57,7 @@
                                             onclick="Code.generate()">
                                         <span style="padding: 5px 20px;">生成</span>
                                     </button>
+                                    <p class="text-danger"><u>生成代码前请检查CodeController类的数据源是否正确！！！</u></p>
                                 </div>
                             </div>
                         </div>
