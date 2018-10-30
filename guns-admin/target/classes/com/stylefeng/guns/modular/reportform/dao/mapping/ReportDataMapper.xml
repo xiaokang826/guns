@@ -3,8 +3,7 @@
 <mapper namespace="com.stylefeng.guns.modular.reportform.dao.ReportDataMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.reportform.model.ReportData">
-        <id column="id" property="id" />
+    <resultMap id="BaseResultMap" type="hashmap">
         <result column="account_change_time" property="accountChangeTime" />
         <result column="user_name" property="userName" />
         <result column="game_name" property="gameName" />
@@ -32,7 +31,36 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, account_change_time, user_name, game_name, room_type, table_number, seat_number, leisure, initial_amount, total_bet, valid_bet, win_lose_amount, board_number, game_result, game_start_time, game_end_time, log_details, order_number, order_details, account_type, amount_before_change, account_change_amount, amount_after_change, operator
+        account_change_time, user_name, game_name, room_type, table_number, seat_number, leisure, initial_amount, total_bet, valid_bet, win_lose_amount, board_number, game_result, game_start_time, game_end_time, log_details, order_number, order_details, account_type, amount_before_change, account_change_amount, amount_after_change, operator
     </sql>
 
+    <insert id="insertMapData" parameterType="map">
+        insert into report_data
+        <foreach collection="map.keys" item="key" open="(" close=")" separator="," >
+            ${key}
+        </foreach>
+        values
+        <foreach collection="map.keys"  item="key" open="(" close=")" separator=",">
+            #{map[${key}]}
+        </foreach>
+    </insert>
+
+    <select id="selectWinLoseReport" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from report_data
+        where 1 = 1
+        <if test="gameType != null and gameType != ''">
+            and game_name = #{gameType}
+        </if>
+        <if test="roomType != null and roomType != ''">
+            and room_type = #{roomType}
+        </if>
+        <if test="userName != null and userName != ''">
+            and user_name = #{userName}
+        </if>
+        <if test="beginTime != null and beginTime != '' and endTime != null and endTime != ''">
+            and (account_change_time between CONCAT(#{beginTime},' 00:00:00') and CONCAT(#{endTime},' 23:59:59'))
+        </if>
+    </select>
 </mapper>

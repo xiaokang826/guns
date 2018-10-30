@@ -39,7 +39,7 @@ public class CodeController extends BaseController {
     private DruidProperties druidProperties;
 
 //    @Autowired //多数据源 此处有多个相同类型的bean
-    @Resource(name = "reportDataSourceProperties") //此处bean的名称为MultiDataSourceConfig里注册的bean名称(默认是方法名)
+    @Resource(name = "DominoDataSourceProperties") //此处bean的名称为MultiDataSourceConfig里注册的bean名称(默认是方法名)
     private MultiDataSourceProperties multiDataSourceProperties;
 
     @Autowired

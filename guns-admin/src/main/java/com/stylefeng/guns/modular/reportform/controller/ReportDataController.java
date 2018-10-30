@@ -3,6 +3,9 @@ package com.stylefeng.guns.modular.reportform.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.reportform.warpper.WinLoseReportWarpper;
+import com.sun.deploy.net.HttpResponse;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import com.stylefeng.guns.modular.reportform.model.ReportData;
 import com.stylefeng.guns.modular.reportform.service.IReportDataService;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * 输赢报表控制器
  *
@@ -24,7 +30,7 @@ import com.stylefeng.guns.modular.reportform.service.IReportDataService;
 @RequestMapping("/reportData")
 public class ReportDataController extends BaseController {
 
-    private String PREFIX = "/reportform/reportData/";
+    private String PREFIX = "/reportform/";
 
     @Autowired
     private IReportDataService reportDataService;
@@ -62,8 +68,21 @@ public class ReportDataController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     @DataSource(DBTypeEnum.report)
-    public Object list(String condition) {
-        return reportDataService.selectList(null);
+    public Object list(String gameType, String roomType, String userName, String beginTime, String endTime) {
+        List<Map<String,Object>> list = reportDataService.selectWinLoseReport(gameType,roomType,userName,beginTime,endTime);
+        int validBet = 0;
+        int winLoseAmount = 0;
+        if(list != null) {
+            for (Map<String,Object> map : list) {
+                validBet += (Integer) map.get("validBet");
+                winLoseAmount += (Integer) map.get("winLoseAmount");
+            }
+        }
+        super.getSession().setAttribute("validBet", validBet);
+        super.getSession().setAttribute("winLoseAmount", winLoseAmount);
+
+        System.out.println("=============="+super.getSession().getAttribute("validBet"));
+        return super.warpObject(new WinLoseReportWarpper(list));
     }
 
     /**
@@ -104,4 +123,5 @@ public class ReportDataController extends BaseController {
     public Object detail(@PathVariable("reportDataId") Integer reportDataId) {
         return reportDataService.selectById(reportDataId);
     }
+
 }

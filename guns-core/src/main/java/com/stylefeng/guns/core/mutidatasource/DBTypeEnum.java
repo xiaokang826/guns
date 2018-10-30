@@ -6,7 +6,12 @@ package com.stylefeng.guns.core.mutidatasource;
  */
 public enum DBTypeEnum {
 
-    guns("guns"), item("item"),log("log"),report("report");
+    guns("guns"),
+    item("item"),
+    report("report"),
+    gold("gold"),
+    domino("domino"),
+    niuniu("niuniu");
 
     private String value;
 

@@ -31,82 +31,24 @@ ReportData.initColumn = function () {
 };
 
 /**
- * 检查是否选中
- */
-ReportData.check = function () {
-    var selected = $('#' + this.id).bootstrapTable('getSelections');
-    if(selected.length == 0){
-        Feng.info("请先选中表格中的某一记录！");
-        return false;
-    }else{
-        ReportData.seItem = selected[0];
-        return true;
-    }
-};
-
-/**
- * 点击添加输赢报表
- */
-ReportData.openAddReportData = function () {
-    var index = layer.open({
-        type: 2,
-        title: '添加输赢报表',
-        area: ['800px', '420px'], //宽高
-        fix: false, //不固定
-        maxmin: true,
-        content: Feng.ctxPath + '/reportData/reportData_add'
-    });
-    this.layerIndex = index;
-};
-
-/**
- * 打开查看输赢报表详情
- */
-ReportData.openReportDataDetail = function () {
-    if (this.check()) {
-        var index = layer.open({
-            type: 2,
-            title: '输赢报表详情',
-            area: ['800px', '420px'], //宽高
-            fix: false, //不固定
-            maxmin: true,
-            content: Feng.ctxPath + '/reportData/reportData_update/' + ReportData.seItem.id
-        });
-        this.layerIndex = index;
-    }
-};
-
-/**
- * 删除输赢报表
- */
-ReportData.delete = function () {
-    if (this.check()) {
-        var operation = function() {
-            var ajax = new $ax(Feng.ctxPath + "/reportData/delete", function (data) {
-                Feng.success("删除成功!");
-                ReportData.table.refresh();
-            }, function (data) {
-                Feng.error("删除失败!" + data.responseJSON.message + "!");
-            });
-            ajax.set("reportDataId",ReportData.seItem.id);
-            ajax.start();
-        };
-        Feng.confirm("是否删除ID " + ReportData.seItem.id + "?",operation);
-    }
-};
-
-/**
  * 查询输赢报表列表
  */
 ReportData.search = function () {
     var queryData = {};
-    queryData['condition'] = $("#condition").val();
+    queryData['beginTime'] = $("#beginTime").val();
+    queryData['endTime'] = $("#endTime").val();
+    queryData['gameType'] = $("#gameType").val();
+    queryData['roomType'] = $("#roomType").val();
+    queryData['userName'] = $("#userName").val();
     ReportData.table.refresh({query: queryData});
+   // alert('刷新啦'+ $validBet );
+   //  $("#total").html(session.validBet);
+   //  $("#total").html("总有效投注："+${session.validBet}，总输赢：${session.winLoseAmount}");
 };
 
 $(function () {
     var defaultColunms = ReportData.initColumn();
     var table = new BSTable(ReportData.id, "/reportData/list", defaultColunms);
-    table.setPaginationType("client");table.set
+    table.setPaginationType("client");
     ReportData.table = table.init();
 });

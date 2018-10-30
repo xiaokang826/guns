@@ -13,14 +13,26 @@
     },
     {
       "sourceType": "com.stylefeng.guns.config.datasource.MultiDataSourceConfig",
-      "name": "multi-datasource.item",
-      "sourceMethod": "itemDataSourceProperties()",
+      "name": "multi-datasource.game-domino",
+      "sourceMethod": "DominoDataSourceProperties()",
       "type": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties"
     },
     {
       "sourceType": "com.stylefeng.guns.config.datasource.MultiDataSourceConfig",
-      "name": "multi-datasource.log",
-      "sourceMethod": "logDataSourceProperties()",
+      "name": "multi-datasource.game-gold",
+      "sourceMethod": "GoldDataSourceProperties()",
+      "type": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.config.datasource.MultiDataSourceConfig",
+      "name": "multi-datasource.game-niuniu",
+      "sourceMethod": "NiuniuDataSourceProperties()",
+      "type": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.config.datasource.MultiDataSourceConfig",
+      "name": "multi-datasource.item",
+      "sourceMethod": "itemDataSourceProperties()",
       "type": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties"
     },
     {
@@ -98,12 +110,2847 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-domino.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-gold.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.game-niuniu.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
       "name": "multi-datasource.item.data-source-names",
       "type": "java.lang.String[]"
     },
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
       "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.password",
       "type": "java.lang.String"
     },
     {
@@ -118,7 +2965,412 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
       "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.item.validation-query",
       "type": "java.lang.String"
     },
     {
@@ -163,7 +3415,412 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.data-source-names",
+      "type": "java.lang.String[]"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
       "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.driver-class-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.password",
       "type": "java.lang.String"
     },
     {
@@ -178,7 +3835,412 @@
     },
     {
       "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.url",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
       "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.username",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.stylefeng.guns.core.config.properties.MultiDataSourceProperties",
+      "name": "multi-datasource.report.validation-query",
       "type": "java.lang.String"
     },
     {

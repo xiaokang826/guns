@@ -40,7 +40,7 @@ spring:
     url: jdbc:mysql://10.0.0.117:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
     password: root
-    db-name: demo #用来搜集数据库的所有表(生成代码)
+    db-name: domino_common #用来搜集数据库的所有表(生成代码)
     filters: wall,mergeStat
 
 #多数据源情况的配置
@@ -59,12 +59,20 @@ multi-datasource:
     url: jdbc:mysql://10.0.0.117:3306/spring_boot?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
     password: root
-  log:
-    url: jdbc:mysql://10.0.0.117:3306/teen_patti_gold_log?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
-    username: root
-    password: root
   report:
     url: jdbc:mysql://10.0.0.117:3306/demo?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+  game-gold:
+    url: jdbc:mysql://10.0.0.117:3306/teen_patti_gold_waibao?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+  game-domino:
+    url: jdbc:mysql://10.0.0.117:3306/domino_common?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    username: root
+    password: root
+  game-niuniu:
+    url: jdbc:mysql://10.0.0.117:3306/poker_niuniu?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
     password: root
 

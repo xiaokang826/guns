@@ -48,14 +48,26 @@ public class MultiDataSourceConfig {
     }
 
     @Bean
-    @ConfigurationProperties(prefix = "multi-datasource.log")
-    public MultiDataSourceProperties logDataSourceProperties() {
+    @ConfigurationProperties(prefix = "multi-datasource.report")
+    public MultiDataSourceProperties reportDataSourceProperties() {
         return new MultiDataSourceProperties();
     }
 
     @Bean
-    @ConfigurationProperties(prefix = "multi-datasource.report")
-    public MultiDataSourceProperties reportDataSourceProperties() {
+    @ConfigurationProperties(prefix = "multi-datasource.game-gold")
+    public MultiDataSourceProperties GoldDataSourceProperties() {
+        return new MultiDataSourceProperties();
+    }
+
+    @Bean
+    @ConfigurationProperties(prefix = "multi-datasource.game-domino")
+    public MultiDataSourceProperties DominoDataSourceProperties() {
+        return new MultiDataSourceProperties();
+    }
+
+    @Bean
+    @ConfigurationProperties(prefix = "multi-datasource.game-niuniu")
+    public MultiDataSourceProperties NiuniuDataSourceProperties() {
         return new MultiDataSourceProperties();
     }
 
@@ -84,19 +96,25 @@ public class MultiDataSourceConfig {
     @Bean
     public DynamicDataSource mutiDataSource(DruidProperties druidProperties,
                                             @Qualifier("itemDataSourceProperties") MultiDataSourceProperties itemDataSourceProperties,
-                                            @Qualifier("logDataSourceProperties") MultiDataSourceProperties logDataSourceProperties,
-                                            @Qualifier("reportDataSourceProperties") MultiDataSourceProperties reportDataSourceProperties) {
+                                            @Qualifier("reportDataSourceProperties") MultiDataSourceProperties reportDataSourceProperties,
+                                            @Qualifier("GoldDataSourceProperties") MultiDataSourceProperties goldDataSourceProperties,
+                                            @Qualifier("DominoDataSourceProperties") MultiDataSourceProperties dominoDataSourceProperties,
+                                            @Qualifier("NiuniuDataSourceProperties") MultiDataSourceProperties niuniuDataSourceProperties) {
 
         DruidDataSource dataSourceGuns = dataSource(druidProperties);
         DruidDataSource itemDataSource = bizDataSource(druidProperties, itemDataSourceProperties);
-        DruidDataSource logDataSource = bizDataSource(druidProperties, logDataSourceProperties);
         DruidDataSource reportDataSource = bizDataSource(druidProperties, reportDataSourceProperties);
+        DruidDataSource goldDataSource = bizDataSource(druidProperties, goldDataSourceProperties);
+        DruidDataSource dominoDataSource = bizDataSource(druidProperties, dominoDataSourceProperties);
+        DruidDataSource niuniuDataSource = bizDataSource(druidProperties, niuniuDataSourceProperties);
 
         try {
             dataSourceGuns.init();
             itemDataSource.init();
-            logDataSource.init();
             reportDataSource.init();
+            goldDataSource.init();
+            dominoDataSource.init();
+            niuniuDataSource.init();
         } catch (SQLException sql) {
             sql.printStackTrace();
         }
@@ -105,8 +123,10 @@ public class MultiDataSourceConfig {
         HashMap<Object, Object> hashMap = new HashMap<>();
         hashMap.put(DBTypeEnum.guns.getValue(), dataSourceGuns);
         hashMap.put(DBTypeEnum.item.getValue(), itemDataSource);
-        hashMap.put(DBTypeEnum.log.getValue(), logDataSource);
         hashMap.put(DBTypeEnum.report.getValue(), reportDataSource);
+        hashMap.put(DBTypeEnum.gold.getValue(), goldDataSource);
+        hashMap.put(DBTypeEnum.domino.getValue(), dominoDataSource);
+        hashMap.put(DBTypeEnum.niuniu.getValue(), niuniuDataSource);
         dynamicDataSource.setTargetDataSources(hashMap);
         dynamicDataSource.setDefaultTargetDataSource(dataSourceGuns);
         return dynamicDataSource;

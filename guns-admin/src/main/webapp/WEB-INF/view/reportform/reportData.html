@@ -1,0 +1,73 @@
+@layout("/common/_container.html"){
+<div class="row">
+    <div class="col-sm-12">
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <h5>输赢报表管理</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row row-lg">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <#TimeCon id="beginTime" name="开始日期" isTime="false"/>
+                            </div>
+                            <div class="col-sm-2">
+                                <#TimeCon id="endTime" name="结束日期" isTime="true"/>
+                            </div>
+                            <div class="col-sm-2">
+                                <#SelectCon id="gameType" name="游戏" >
+                                    <option value="">全部游戏</option>
+                                    <option value="炸金花">炸金花</option>
+                                    <option value="牛牛">牛牛</option>
+                                    <option value="牌九">牌九</option>
+                                </#SelectCon>
+                            </div>
+                            <div class="col-sm-2">
+                                <#SelectCon id="roomType" name="房间" >
+                                    <option value="">全部房间</option>
+                                    <option value="普通房">普通房</option>
+                                    <option value="高级房">高级房</option>
+                                </#SelectCon>
+                            </div>
+                            <div class="col-sm-3">
+                                <#NameCon id="userName" name="用户名" />
+                            </div>
+                            <div class="col-sm-1">
+                                <#button name="搜索" icon="fa-search" clickFun="getMyName()"/>
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <h2><p id="total"  class="text-danger"></p></h2>
+                        </div>
+                        <#table id="ReportDataTable"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/reportform/reportData.js"></script>
+<script>
+    laydate.render({
+        elem: '#beginTime'
+    });
+    laydate.render({
+        elem: '#endTime'
+    });
+    function demo() {
+        ReportData.search();
+        console.log(${session.validBet})
+        $("#total").html(${session.validBet});
+    }
+
+
+
+    function getMyName(){
+        ReportData.search();
+        var myName=${session.validBet};
+        alert(myName);
+    }
+
+</script>
+@}
