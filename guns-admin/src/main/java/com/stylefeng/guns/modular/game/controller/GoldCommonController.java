@@ -3,6 +3,7 @@ package com.stylefeng.guns.modular.game.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.game.warpper.GoldCommonWarpper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,6 +14,9 @@ import com.stylefeng.guns.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.stylefeng.guns.modular.game.model.GoldCommon;
 import com.stylefeng.guns.modular.game.service.IGoldCommonService;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 炸金花通用配置控制器
@@ -64,7 +68,8 @@ public class GoldCommonController extends BaseController {
     @ResponseBody
     @DataSource(DBTypeEnum.gold)
     public Object list(String condition) {
-        return goldCommonService.selectList(null);
+        List<Map<String,Object>> list = goldCommonService.selectList();
+        return super.warpObject(new GoldCommonWarpper(list));
     }
 
     /**

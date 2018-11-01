@@ -4,6 +4,8 @@ import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
 import com.stylefeng.guns.modular.game.model.DominoRoom;
+import com.stylefeng.guns.modular.game.warpper.DominoRoomWarpper;
+import com.stylefeng.guns.modular.reportform.warpper.WinLoseReportWarpper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,6 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.stylefeng.guns.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.stylefeng.guns.modular.game.service.IDominoRoomService;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 游戏房间配置控制器
@@ -64,7 +69,8 @@ public class DominoRoomController extends BaseController {
     @ResponseBody
     @DataSource(DBTypeEnum.domino)
     public Object list(String condition) {
-        return roomConfigService.selectList(null);
+        List<Map<String,Object>> list = roomConfigService.selectList();
+        return super.warpObject(new DominoRoomWarpper(list));
     }
 
     /**

@@ -103,5 +103,10 @@ DominoRoomInfoDlg.editSubmit = function() {
 }
 
 $(function() {
-
+    //初始化房间开关
+    if($("#onOffValue").val() == undefined){
+        $("#onOff").val(0);
+    }else{
+        $("#onOff").val($("#onOffValue").val());
+    }
 });

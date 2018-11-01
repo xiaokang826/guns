@@ -3,6 +3,7 @@ package com.stylefeng.guns.modular.game.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.game.warpper.NiuniuRoomWarpper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,6 +14,9 @@ import com.stylefeng.guns.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
 import com.stylefeng.guns.modular.game.model.NiuniuRoom;
 import com.stylefeng.guns.modular.game.service.INiuniuRoomService;
+
+import java.util.List;
+import java.util.Map;
 
 /**
  * 牛牛房间配置控制器
@@ -64,7 +68,8 @@ public class NiuniuRoomController extends BaseController {
     @ResponseBody
     @DataSource(DBTypeEnum.niuniu)
     public Object list(String condition) {
-        return niuniuRoomService.selectList(null);
+        List<Map<String,Object>> list = niuniuRoomService.selectList();
+        return super.warpObject(new NiuniuRoomWarpper(list));
     }
 
     /**

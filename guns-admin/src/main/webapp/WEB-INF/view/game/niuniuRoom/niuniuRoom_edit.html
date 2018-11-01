@@ -5,6 +5,7 @@
 
             <div class="row">
                 <#input id="id" name="" value="${item.id}" type="hidden"/>
+                <input type="hidden" id="onOffValue" value="${item.onOff}">
                 <div class="col-sm-6 b-r">
                     <#input id="roomId" name="房间id" value="${item.roomId}" underline="true"/>
                     <#input id="minJoinTable" name="入桌最小积分" value="${item.minJoinTable}" underline="true"/>
@@ -12,9 +13,12 @@
                 </div>
 
                 <div class="col-sm-6">
-                    <#input id="serviceCharge" name="服务费比率" value="${item.serviceCharge}" underline="true"/>
+                    <#input id="serviceCharge" name="服务费比率(0.05)" value="${item.serviceCharge}" underline="true"/>
                     <#input id="robMultiple" name="抢庄倍数" value="${item.robMultiple}" underline="true"/>
-                    <#input id="onOff" name="房间开关" value="${item.onOff}" />
+                    <#select id="onOff" name="房间开关" >
+                        <option value="0">关</option>
+                        <option value="1">开</option>
+                    </#select>
                 </div>
             </div>
 

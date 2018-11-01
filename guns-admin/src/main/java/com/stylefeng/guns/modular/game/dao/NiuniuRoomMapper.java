@@ -3,6 +3,9 @@ package com.stylefeng.guns.modular.game.dao;
 import com.stylefeng.guns.modular.game.model.NiuniuRoom;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * <p>
  *  Mapper 接口
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  */
 public interface NiuniuRoomMapper extends BaseMapper<NiuniuRoom> {
 
+    List<Map<String,Object>> selectList();
 }

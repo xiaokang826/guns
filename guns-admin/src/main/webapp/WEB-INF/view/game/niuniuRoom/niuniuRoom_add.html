@@ -11,9 +11,12 @@
                 </div>
 
                 <div class="col-sm-6">
-                    <#input id="serviceCharge" name="服务费比率" underline="true"/>
+                    <#input id="serviceCharge" name="服务费比率(0.05)" underline="true"/>
                     <#input id="robMultiple" name="抢庄倍数" underline="true"/>
-                    <#input id="onOff" name="房间开关"/>
+                    <#select id="onOff" name="房间开关" >
+                        <option value="0">关</option>
+                        <option value="1">开</option>
+                    </#select>
                 </div>
             </div>
 

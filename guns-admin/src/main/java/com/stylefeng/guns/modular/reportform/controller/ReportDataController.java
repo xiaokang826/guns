@@ -81,7 +81,6 @@ public class ReportDataController extends BaseController {
         super.getSession().setAttribute("validBet", validBet);
         super.getSession().setAttribute("winLoseAmount", winLoseAmount);
 
-        System.out.println("=============="+super.getSession().getAttribute("validBet"));
         return super.warpObject(new WinLoseReportWarpper(list));
     }
 

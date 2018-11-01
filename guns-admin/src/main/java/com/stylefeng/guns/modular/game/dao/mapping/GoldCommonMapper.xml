@@ -3,7 +3,7 @@
 <mapper namespace="com.stylefeng.guns.modular.game.dao.GoldCommonMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.game.model.GoldCommon">
+    <resultMap id="BaseResultMap" type="hashmap">
         <id column="id" property="id" />
         <result column="play_type" property="playType" />
         <result column="is_change_card" property="isChangeCard" />
@@ -20,4 +20,9 @@
         id, play_type, is_change_card, change_fee, settle_type, is_allow_sideshow, is_sideshow_user, allow_sideshow_cd, bet_cd, game_start_cd
     </sql>
 
+    <select id="selectList" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM common_config
+    </select>
 </mapper>
