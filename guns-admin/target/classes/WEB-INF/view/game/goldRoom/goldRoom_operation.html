@@ -20,13 +20,14 @@
                     <#input id="tipValue" name="荷官打赏数量" value="${item.tipValue}" />
                     <#input id="changeFee" name="换牌所需费用" value="${item.changeFee}" underline="true"/>
                     <#input id="changeFeeTips" name="换牌的服务费" value="${item.changeFeeTips}" underline="true"/>
+                    <#input id="doubleRoles" name="加倍规则" value="${item.doubleRoles}" underline="true"/>
                     <#input id="xiQian" name="喜钱" value="${item.xiQian}" />
                 </div>
             </div>
 
             <div class="row btn-group-m-t">
                 <div class="col-sm-10">
-                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="GoldRoomInfoDlg.editSubmit()"/>
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="GoldRoomInfoDlg.operationSubmit('${operation}')"/>
                     <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="GoldRoomInfoDlg.close()"/>
                 </div>
             </div>

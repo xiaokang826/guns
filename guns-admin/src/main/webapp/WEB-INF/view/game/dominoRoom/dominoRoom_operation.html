@@ -14,7 +14,7 @@
 
                 <div class="col-sm-6">
                     <#input id="serviceCharge" name="服务费比率(0.05)" value="${item.serviceCharge}" underline="true"/>
-                    <#input id="robMultiple" name="抢庄倍数" value="${item.robMultiple}" underline="true"/>
+                    <#input id="doubleRoles" name="加倍倍数" value="${item.doubleRoles}" underline="true"/>
                     <#select id="onOff" name="房间开关" >
                         <option value="0">关</option>
                         <option value="1">开</option>
@@ -24,13 +24,18 @@
 
             <div class="row btn-group-m-t">
                 <div class="col-sm-10">
-                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="NiuniuRoomInfoDlg.editSubmit()"/>
-                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="NiuniuRoomInfoDlg.close()"/>
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="DominoRoomInfoDlg.operationSubmit('${operation}')"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="DominoRoomInfoDlg.close()"/>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
-<script src="${ctxPath}/static/modular/game/niuniuRoom/niuniuRoom_info.js"></script>
+<script src="${ctxPath}/static/modular/game/dominoRoom/dominoRoom_info.js"></script>
+<script>
+    $(function() {
+        // alert("${operation}")
+    });
+</script>
 @}
