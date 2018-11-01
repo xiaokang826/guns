@@ -1,0 +1,12 @@
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825898761220097', 'dominoCommon', 'domino', '[0],[domino],', '', '', '/dominoCommon', '99', '2', '1', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825898761220097','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825898761220098', 'dominoCommon_list', 'dominoCommon', '[0],[domino],[dominoCommon],', '列表', '', '/dominoCommon/list', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825898761220098','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825898761220099', 'dominoCommon_add', 'dominoCommon', '[0],[domino],[dominoCommon],', '添加', '', '/dominoCommon/add', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825898761220099','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825898761220100', 'dominoCommon_update', 'dominoCommon', '[0],[domino],[dominoCommon],', '更新', '', '/dominoCommon/update', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825898761220100','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825898761220101', 'dominoCommon_delete', 'dominoCommon', '[0],[domino],[dominoCommon],', '删除', '', '/dominoCommon/delete', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825898761220101','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825898761220102', 'dominoCommon_detail', 'dominoCommon', '[0],[domino],[dominoCommon],', '详情', '', '/dominoCommon/detail', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825898761220102','1');

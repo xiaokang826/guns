@@ -1,0 +1,12 @@
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057824098473668609', 'niuniuRoom', 'niuniu', '[0],[niuniu],', '', '', '/niuniuRoom', '99', '2', '1', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057824098473668609','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057824098473668610', 'niuniuRoom_list', 'niuniuRoom', '[0],[niuniu],[niuniuRoom],', '列表', '', '/niuniuRoom/list', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057824098473668610','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057824098473668611', 'niuniuRoom_add', 'niuniuRoom', '[0],[niuniu],[niuniuRoom],', '添加', '', '/niuniuRoom/add', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057824098473668611','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057824098473668612', 'niuniuRoom_update', 'niuniuRoom', '[0],[niuniu],[niuniuRoom],', '更新', '', '/niuniuRoom/update', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057824098473668612','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057824098473668613', 'niuniuRoom_delete', 'niuniuRoom', '[0],[niuniu],[niuniuRoom],', '删除', '', '/niuniuRoom/delete', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057824098473668613','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057824098473668614', 'niuniuRoom_detail', 'niuniuRoom', '[0],[niuniu],[niuniuRoom],', '详情', '', '/niuniuRoom/detail', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057824098473668614','1');

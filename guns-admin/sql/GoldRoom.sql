@@ -1,0 +1,12 @@
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825673560649729', 'goldRoom', 'gold', '[0],[gold],', '', '', '/goldRoom', '99', '2', '1', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825673560649729','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825673560649730', 'goldRoom_list', 'goldRoom', '[0],[gold],[goldRoom],', '列表', '', '/goldRoom/list', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825673560649730','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825673560649731', 'goldRoom_add', 'goldRoom', '[0],[gold],[goldRoom],', '添加', '', '/goldRoom/add', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825673560649731','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825673560649732', 'goldRoom_update', 'goldRoom', '[0],[gold],[goldRoom],', '更新', '', '/goldRoom/update', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825673560649732','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825673560649733', 'goldRoom_delete', 'goldRoom', '[0],[gold],[goldRoom],', '删除', '', '/goldRoom/delete', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825673560649733','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057825673560649734', 'goldRoom_detail', 'goldRoom', '[0],[gold],[goldRoom],', '详情', '', '/goldRoom/detail', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057825673560649734','1');

@@ -46,7 +46,15 @@ Code.selectTemplate = function (templateKey) {
 Code.generate = function () {
     Code.submitData = {};
     Code.submitData.tableName = Code.tableName;
-    this.set('projectPath').set('author').set('projectPackage').set('corePackage').set('ignoreTabelPrefix').set('bizName').set('moduleName').set('parentMenuName');
+    this.set('projectPath')
+        .set('author')
+        .set('projectPackage')
+        .set('corePackage')
+        .set('ignoreTabelPrefix')
+        .set('bizName')
+        .set('moduleName')
+        .set('parentMenuName')
+        .set('className');
     var baseAjax = Feng.baseAjax("/code/generate", "生成代码");
 
     for (var item in Code.switchs) {

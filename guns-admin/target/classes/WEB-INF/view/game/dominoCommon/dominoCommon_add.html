@@ -1,0 +1,28 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <#input id="gameStartCd" name="游戏开始倒计时" underline="true"/>
+                    <#input id="betCd" name="下注倒计时" underline="true"/>
+                </div>
+                <div class="col-sm-6">
+                    <#input id="openCardsCd" name="开牌倒计时" underline="true"/>
+                    <#input id="settleCd" name="结算CD" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="DominoCommonInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="DominoCommonInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/game/dominoCommon/dominoCommon_info.js"></script>
+@}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stylefeng.guns.modular.game.dao.DominoCommonMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stylefeng.guns.modular.game.model.DominoCommon">
+        <id column="id" property="id" />
+        <result column="play_type" property="playType" />
+        <result column="rob_dealer_pct" property="robDealerPct" />
+        <result column="change_fee" property="changeFee" />
+        <result column="settle_type" property="settleType" />
+        <result column="is_allow_sideshow" property="isAllowSideshow" />
+        <result column="is_sideshow_user" property="isSideshowUser" />
+        <result column="game_start_cd" property="gameStartCd" />
+        <result column="bet_cd" property="betCd" />
+        <result column="rob_zhuang_cd" property="robZhuangCd" />
+        <result column="fix_dealer_cd" property="fixDealerCd" />
+        <result column="open_cards_cd" property="openCardsCd" />
+        <result column="settle_cd" property="settleCd" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, play_type, rob_dealer_pct, change_fee, settle_type, is_allow_sideshow, is_sideshow_user, game_start_cd, bet_cd, rob_zhuang_cd, fix_dealer_cd, open_cards_cd, settle_cd
+    </sql>
+
+</mapper>

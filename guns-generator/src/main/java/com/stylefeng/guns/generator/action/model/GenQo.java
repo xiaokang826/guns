@@ -74,6 +74,11 @@ public class GenQo {
     private String[] pcodeAndPcodes;
 
     /**
+     * 自定义类名(只对有模板的生成类有效)
+     */
+    private String className;
+
+    /**
      * 是否生成控制器代码开关
      */
     private Boolean controllerSwitch = false;
@@ -305,5 +310,13 @@ public class GenQo {
 
     public void setParentMenuName(String parentMenuName) {
         this.parentMenuName = parentMenuName;
+    }
+
+    public String getClassName() {
+        return className;
+    }
+
+    public void setClassName(String className) {
+        this.className = className;
     }
 }

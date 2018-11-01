@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.stylefeng.guns.core.support.StrKit;
 import com.stylefeng.guns.core.util.ToolUtil;
 import com.stylefeng.guns.generator.action.model.GenQo;
+import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 
@@ -73,8 +74,13 @@ public class WebGeneratorConfig extends AbstractGeneratorConfig {
         }else{
             String entiyName = StrKit.toCamelCase(StrKit.removePrefix(genQo.getTableName(), genQo.getIgnoreTabelPrefix()));
             contextConfig.setEntityName(StrKit.firstCharToUpperCase(entiyName));
-            contextConfig.setBizEnName(StrKit.firstCharToLowerCase(entiyName));
+            contextConfig.setBizEnName(StrKit.firstCharToUpperCase(entiyName));
         }
+        if(!contextConfig.getBizEnName().equals(genQo.getClassName())){
+            contextConfig.setEntityName(StrKit.firstCharToUpperCase(genQo.getClassName()));
+            contextConfig.setBizEnName(StrKit.firstCharToLowerCase(genQo.getClassName()));
+        }
+
         sqlConfig.setParentMenuName(genQo.getParentMenuName());//这里写已有菜单的名称,当做父节点
 
         /**

@@ -1,0 +1,37 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <#input id="id" name="" value="${item.id}" type="hidden"/>
+                <div class="col-sm-6 b-r">
+                    <#input id="robDealerPct" name="抢庄几率" value="${item.robDealerPct}" underline="true"/>
+                    <#input id="robotJoinPct" name="出现机器人的百分比(30,30,40)" value="${item.robotJoinPct}" underline="true"/>
+                    <#input id="poolMoney" name="资金池初始值" value="${item.poolMoney}" underline="true"/>
+                    <#input id="totalLosePct" name="每局牌流水的百分比[0-100]" value="${item.totalLosePct}" underline="true"/>
+                    <#input id="gameStartCd" name="游戏开始倒计时" value="${item.gameStartCd}" underline="true"/>
+                    <#input id="betCd" name="下注倒计时" value="${item.betCd}" />
+                </div>
+
+                <div class="col-sm-6">
+                    <#input id="robZhuangCd" name="抢庄倒计时" value="${item.robZhuangCd}" underline="true"/>
+                    <#input id="fixDealerCd" name="定庄倒计时" value="${item.fixDealerCd}" underline="true"/>
+                    <#input id="openCardsCd" name="开牌倒计时" value="${item.openCardsCd}" underline="true"/>
+                    <#input id="strategyMaxPct" name="策略比值(大值)" value="${item.strategyMaxPct}" underline="true"/>
+                    <#input id="strategyMinPct" name="策略比值(小值)" value="${item.strategyMinPct}" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="NiuniuCommonInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="NiuniuCommonInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/game/niuniuCommon/niuniuCommon_info.js"></script>
+@}

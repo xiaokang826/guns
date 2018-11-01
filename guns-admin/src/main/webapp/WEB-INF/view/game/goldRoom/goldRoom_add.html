@@ -1,0 +1,38 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <div class="col-sm-6 b-r">
+                    <#input id="roomId" name="房间id" underline="true"/>
+                    <#input id="minJoinTable" name="入桌的最小积分" underline="true"/>
+                    <#input id="ante" name="底注" underline="true"/>
+                    <#input id="firstBetScore" name="首次下注基础注" underline="true"/>
+                    <#input id="maxBetScore" name="最大下注额度" underline="true"/>
+                    <#input id="serviceCharge" name="服务费比率" underline="true"/>
+                    <#input id="maxBlindRound" name="盲牌最大轮次" underline="true"/>
+                </div>
+
+                <div class="col-sm-6">
+                    <#input id="maxPot" name="底池总封" underline="true"/>
+                    <#input id="tipValue" name="荷官打赏数量"/>
+                    <#input id="changeFee" name="换牌所需费用" underline="true"/>
+                    <#input id="changeFeeTips" name="换牌服务费" underline="true"/>
+                    <#input id="doubleRoles" name="加倍规则" underline="true"/>
+                    <#input id="xiQian" name="喜钱" underline="true"/>
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="GoldRoomInfoDlg.addSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="GoldRoomInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/game/goldRoom/goldRoom_info.js"></script>
+@}

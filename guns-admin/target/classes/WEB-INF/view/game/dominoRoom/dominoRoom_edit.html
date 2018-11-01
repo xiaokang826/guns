@@ -1,0 +1,32 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <#input id="id" name="" value="${item.id}" type="hidden"/>
+                <div class="col-sm-6 b-r">
+                    <#input id="roomId" name="房间id" value="${item.roomId}" underline="true"/>
+                    <#input id="minJoinTable" name="入桌最小积分" value="${item.minJoinTable}" underline="true"/>
+                    <#input id="ante" name="底注" value="${item.ante}" underline="true"/>
+                </div>
+
+                <div class="col-sm-6">
+                    <#input id="serviceCharge" name="服务费比率" value="${item.serviceCharge}" underline="true"/>
+                    <#input id="doubleRoles" name="加倍倍数" value="${item.doubleRoles}" underline="true"/>
+                    <#input id="onOff" name="房间开关" value="${item.onOff}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="DominoRoomInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="DominoRoomInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/game/dominoRoom/dominoRoom_info.js"></script>
+@}

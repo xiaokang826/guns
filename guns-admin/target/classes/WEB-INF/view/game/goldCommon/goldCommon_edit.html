@@ -1,0 +1,34 @@
+@layout("/common/_container.html"){
+<div class="ibox float-e-margins">
+    <div class="ibox-content">
+        <div class="form-horizontal">
+
+            <div class="row">
+                <#input id="id" name="" value="${item.id}" type="hidden"/>
+                <div class="col-sm-6 b-r">
+                    <#input id="playType" name="玩法" value="${item.playType}" underline="true"/>
+                    <#input id="isChangeCard" name="换牌开关" value="${item.isChangeCard}" underline="true"/>
+                    <#input id="settleType" name="自动结算类型" value="${item.settleType}" />
+                    <#input id="isAllowSideshow" name="是否需要被比牌方同意比牌申请" value="${item.isAllowSideshow}" underline="true"/>
+                </div>
+
+                <div class="col-sm-6">
+                    <#input id="isSideshowUser" name="是否可以选择指定用户进行比牌" value="${item.isSideshowUser}" underline="true"/>
+                    <#input id="allowSideshowCd" name="被比方同意比牌弹窗的倒计时" value="${item.allowSideshowCd}" underline="true"/>
+                    <#input id="betCd" name="下注倒计时" value="${item.betCd}" underline="true"/>
+                    <#input id="gameStartCd" name="游戏开始倒计时（发牌前倒计时）" value="${item.gameStartCd}" />
+                </div>
+            </div>
+
+            <div class="row btn-group-m-t">
+                <div class="col-sm-10">
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="GoldCommonInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="GoldCommonInfoDlg.close()"/>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="${ctxPath}/static/modular/game/goldCommon/goldCommon_info.js"></script>
+@}

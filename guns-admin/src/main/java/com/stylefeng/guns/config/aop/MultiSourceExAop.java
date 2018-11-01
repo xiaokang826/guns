@@ -2,6 +2,8 @@ package com.stylefeng.guns.config.aop;
 
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.DataSourceContextHolder;
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -26,12 +28,13 @@ public class MultiSourceExAop implements Ordered {
 //    @Pointcut("execution(* com.baomidou.mybatisplus.service.IService.~~*(..)) ")
     //此处需要注意：controller里所有的方法都将会切换数据源
     //解决办法：在方法使用注解切换数据源(此处需要优化)
-    @Pointcut("execution(* com.stylefeng.guns.modular.item.controller..*.*(..)) ")
+    @Pointcut("execution(* com.stylefeng.guns.modular.game.service.IDominoCommonService*.*(..)) ")//此处切面无效
     private void cut() {}
 
     @Before("cut()")
-    public void data(){
+    public void data(JoinPoint joinPoint){
         if(DataSourceContextHolder.getDataSourceType() == null) {
+            Object[] obj = joinPoint.getArgs();
             log.info("切换到item 数据源...");
             DataSourceContextHolder.setDataSourceType(DBTypeEnum.item);
             log.info("设置数据源为->：" + DBTypeEnum.item);

@@ -1,0 +1,12 @@
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057823903954432002', 'niuniuCommon', 'niuniu', '[0],[niuniu],', '', '', '/niuniuCommon', '99', '2', '1', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057823903954432002','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057823903954432003', 'niuniuCommon_list', 'niuniuCommon', '[0],[niuniu],[niuniuCommon],', '列表', '', '/niuniuCommon/list', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057823903954432003','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057823903954432004', 'niuniuCommon_add', 'niuniuCommon', '[0],[niuniu],[niuniuCommon],', '添加', '', '/niuniuCommon/add', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057823903954432004','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057823903954432005', 'niuniuCommon_update', 'niuniuCommon', '[0],[niuniu],[niuniuCommon],', '更新', '', '/niuniuCommon/update', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057823903954432005','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057823903954432006', 'niuniuCommon_delete', 'niuniuCommon', '[0],[niuniu],[niuniuCommon],', '删除', '', '/niuniuCommon/delete', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057823903954432006','1');
+INSERT INTO `guns`.`sys_menu` (`id`, `code`, `pcode`, `pcodes`, `name`, `icon`, `url`, `num`, `levels`, `ismenu`, `tips`, `status`, `isopen`) VALUES ('1057823903954432007', 'niuniuCommon_detail', 'niuniuCommon', '[0],[niuniu],[niuniuCommon],', '详情', '', '/niuniuCommon/detail', '99', '3', '0', NULL, '1', '0');
+INSERT INTO `guns`.`sys_relation` (`menuid`, `roleid`) VALUES ('1057823903954432007','1');
