@@ -58,7 +58,7 @@ GoldCommonInfoDlg.collectData = function() {
 }
 
 /**
- * 提交添加
+ * 提交操作
  */
 GoldCommonInfoDlg.addSubmit = function() {
 
@@ -80,18 +80,17 @@ GoldCommonInfoDlg.addSubmit = function() {
 /**
  * 提交修改
  */
-GoldCommonInfoDlg.editSubmit = function() {
-
+GoldCommonInfoDlg.operationSubmit = function(operation) {
     this.clearData();
     this.collectData();
-
+    var str = operation == "add" ? "添加" : "修改";
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/goldCommon/update", function(data){
-        Feng.success("修改成功!");
+    var ajax = new $ax(Feng.ctxPath + "/goldCommon/"+operation, function(data){
+        Feng.success(str+"成功!");
         window.parent.GoldCommon.table.refresh();
         GoldCommonInfoDlg.close();
     },function(data){
-        Feng.error("修改失败!" + data.responseJSON.message + "!");
+        Feng.error(str+"失败!" + data.responseJSON.message + "!");
     });
     ajax.set(this.goldCommonInfoData);
     ajax.start();
@@ -99,13 +98,13 @@ GoldCommonInfoDlg.editSubmit = function() {
 
 $(function() {
     //初始化玩法
-    $("#playTypeValue").val() == undefined ? $("#playType").val(1) : $("#playType").val($("#playTypeValue").val());
+    $("#playTypeValue").val() == undefined || $("#playTypeValue").val() == "" ? $("#playType").val(1) : $("#playType").val($("#playTypeValue").val());
     //初始化换牌开关
-    $("#isChangeCardValue").val() == undefined ? $("#isChangeCard").val(1) : $("#isChangeCard").val($("#isChangeCardValue").val());
+    $("#isChangeCardValue").val() == undefined || $("#isChangeCardValue").val() == "" ? $("#isChangeCard").val(1) : $("#isChangeCard").val($("#isChangeCardValue").val());
     //初始化自动结算类型
-    $("#settleTypeValue").val() == undefined ? $("#settleTypeType").val(1) : $("#settleTypeType").val($("#settleTypeValue").val());
+    $("#settleTypeValue").val() == undefined || $("#settleTypeValue").val() == "" ? $("#settleTypeType").val(1) : $("#settleTypeType").val($("#settleTypeValue").val());
     //初始化是否需要被比牌方同意比牌申请
-    $("#isAllowSideshowValue").val() == undefined ? $("#isAllowSideshow").val(1) : $("#isAllowSideshow").val($("#isAllowSideshowValue").val());
+    $("#isAllowSideshowValue").val() == undefined || $("#isAllowSideshowValue").val() == "" ? $("#isAllowSideshow").val(1) : $("#isAllowSideshow").val($("#isAllowSideshowValue").val());
     //初始化是否可以选择指定用户进行比牌
-    $("#isSideshowUserValue").val() == undefined ? $("#isSideshowUser").val(1) : $("#isSideshowUser").val($("#isSideshowUserValue").val());
+    $("#isSideshowUserValue").val() == undefined || $("#isSideshowUserValue").val() == "" ? $("#isSideshowUser").val(1) : $("#isSideshowUser").val($("#isSideshowUserValue").val());
 });

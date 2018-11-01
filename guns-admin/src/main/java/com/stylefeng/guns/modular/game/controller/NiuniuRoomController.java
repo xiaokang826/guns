@@ -3,6 +3,7 @@ package com.stylefeng.guns.modular.game.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.game.model.DominoCommon;
 import com.stylefeng.guns.modular.game.warpper.NiuniuRoomWarpper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,8 +46,10 @@ public class NiuniuRoomController extends BaseController {
      * 跳转到添加牛牛房间配置
      */
     @RequestMapping("/niuniuRoom_add")
-    public String niuniuRoomAdd() {
-        return PREFIX + "niuniuRoom_add.html";
+    public String niuniuRoomAdd(Model model) {
+        model.addAttribute("operation", "add");
+        model.addAttribute("item", new NiuniuRoom());
+        return PREFIX + "niuniuRoom_operation.html";
     }
 
     /**
@@ -56,9 +59,10 @@ public class NiuniuRoomController extends BaseController {
     @DataSource(DBTypeEnum.niuniu)
     public String niuniuRoomUpdate(@PathVariable Integer niuniuRoomId, Model model) {
         NiuniuRoom niuniuRoom = niuniuRoomService.selectById(niuniuRoomId);
+        model.addAttribute("operation", "update");
         model.addAttribute("item",niuniuRoom);
         LogObjectHolder.me().set(niuniuRoom);
-        return PREFIX + "niuniuRoom_edit.html";
+        return PREFIX + "niuniuRoom_operation.html";
     }
 
     /**

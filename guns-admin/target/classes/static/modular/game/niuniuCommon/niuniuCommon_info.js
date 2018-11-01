@@ -66,7 +66,7 @@ NiuniuCommonInfoDlg.collectData = function() {
 }
 
 /**
- * 提交添加
+ * 提交操作
  */
 NiuniuCommonInfoDlg.addSubmit = function() {
 
@@ -88,18 +88,17 @@ NiuniuCommonInfoDlg.addSubmit = function() {
 /**
  * 提交修改
  */
-NiuniuCommonInfoDlg.editSubmit = function() {
-
+NiuniuCommonInfoDlg.operationSubmit = function(operation) {
     this.clearData();
     this.collectData();
-
+    var str = operation == "add" ? "添加" : "修改";
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/niuniuCommon/update", function(data){
-        Feng.success("修改成功!");
+    var ajax = new $ax(Feng.ctxPath + "/niuniuCommon/"+operation,function(data){
+        Feng.success(str+"成功!");
         window.parent.NiuniuCommon.table.refresh();
         NiuniuCommonInfoDlg.close();
     },function(data){
-        Feng.error("修改失败!" + data.responseJSON.message + "!");
+        Feng.error(str+"失败!" + data.responseJSON.message + "!");
     });
     ajax.set(this.niuniuCommonInfoData);
     ajax.start();

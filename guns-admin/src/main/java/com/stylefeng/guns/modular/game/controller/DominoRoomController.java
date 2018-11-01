@@ -34,6 +34,7 @@ public class DominoRoomController extends BaseController {
     @Autowired
     private IDominoRoomService roomConfigService;
 
+    private int id;
     /**
      * 跳转到游戏房间配置首页
      */
@@ -46,8 +47,10 @@ public class DominoRoomController extends BaseController {
      * 跳转到添加游戏房间配置
      */
     @RequestMapping("/dominoRoom_add")
-    public String roomConfigAdd() {
-        return PREFIX + "dominoRoom_add.html";
+    public String roomConfigAdd(Model model) {
+        model.addAttribute("operation", "add");
+        model.addAttribute("item", new DominoRoom());
+        return PREFIX + "dominoRoom_operation.html";
     }
 
     /**
@@ -57,9 +60,10 @@ public class DominoRoomController extends BaseController {
     @DataSource(DBTypeEnum.domino)
     public String roomConfigUpdate(@PathVariable Integer roomConfigId, Model model) {
         DominoRoom dominoRoom = roomConfigService.selectById(roomConfigId);
+        model.addAttribute("operation", "update");
         model.addAttribute("item", dominoRoom);
         LogObjectHolder.me().set(dominoRoom);
-        return PREFIX + "dominoRoom_edit.html";
+        return PREFIX + "dominoRoom_operation.html";
     }
 
     /**
@@ -68,8 +72,9 @@ public class DominoRoomController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     @DataSource(DBTypeEnum.domino)
-    public Object list(String condition) {
+    public Object list(Model model) {
         List<Map<String,Object>> list = roomConfigService.selectList();
+        model.addAttribute("operation",id+=100);
         return super.warpObject(new DominoRoomWarpper(list));
     }
 

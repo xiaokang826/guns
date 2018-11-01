@@ -3,6 +3,7 @@ package com.stylefeng.guns.modular.game.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.game.model.DominoCommon;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -41,8 +42,10 @@ public class NiuniuCommonController extends BaseController {
      * 跳转到添加牛牛通用配置
      */
     @RequestMapping("/niuniuCommon_add")
-    public String niuniuCommonAdd() {
-        return PREFIX + "niuniuCommon_add.html";
+    public String niuniuCommonAdd(Model model) {
+        model.addAttribute("operation", "add");
+        model.addAttribute("item", new NiuniuCommon());
+        return PREFIX + "niuniuCommon_operation.html";
     }
 
     /**
@@ -52,9 +55,10 @@ public class NiuniuCommonController extends BaseController {
     @DataSource(DBTypeEnum.niuniu)
     public String niuniuCommonUpdate(@PathVariable Integer niuniuCommonId, Model model) {
         NiuniuCommon niuniuCommon = niuniuCommonService.selectById(niuniuCommonId);
+        model.addAttribute("operation", "update");
         model.addAttribute("item",niuniuCommon);
         LogObjectHolder.me().set(niuniuCommon);
-        return PREFIX + "niuniuCommon_edit.html";
+        return PREFIX + "niuniuCommon_operation.html";
     }
 
     /**

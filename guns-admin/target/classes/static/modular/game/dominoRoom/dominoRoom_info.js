@@ -63,20 +63,19 @@ DominoRoomInfoDlg.collectData = function() {
 }
 
 /**
- * 提交添加
+ * 提交操作
  */
-DominoRoomInfoDlg.addSubmit = function() {
-
+DominoRoomInfoDlg.operationSubmit = function(operation) {
     this.clearData();
     this.collectData();
-
+    var str = operation == "add" ? "添加" : "修改";
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/dominoRoom/add", function(data){
-        Feng.success("添加成功!");
+    var ajax = new $ax(Feng.ctxPath + "/dominoRoom/"+operation, function(data){
+        Feng.success(str+"成功!");
         window.parent.DominoRoom.table.refresh();
         DominoRoomInfoDlg.close();
     },function(data){
-        Feng.error("添加失败!" + data.responseJSON.message + "!");
+        Feng.error(str+"失败!" + data.responseJSON.message + "!");
     });
     ajax.set(this.dominoRoomInfoData);
     ajax.start();
@@ -104,9 +103,9 @@ DominoRoomInfoDlg.editSubmit = function() {
 
 $(function() {
     //初始化房间开关
-    if($("#onOffValue").val() == undefined){
+    if($("#onOffValue").val() == undefined || $("#onOffValue").val() == ""){
         $("#onOff").val(0);
-    }else{
+    }else {
         $("#onOff").val($("#onOffValue").val());
     }
 });

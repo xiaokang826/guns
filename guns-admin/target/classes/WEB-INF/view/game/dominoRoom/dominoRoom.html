@@ -7,6 +7,14 @@
             </div>
             <div class="ibox-content">
                 <div class="row row-lg">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <#NameCon id="condition" name="名称" />
+                        </div>
+                        <div class="col-sm-3">
+                            <#button name="搜索" icon="fa-search" clickFun="Notice.search()"/>
+                        </div>
+                    </div>
                     <div class="col-sm-12">
                         <div class="hidden-xs" id="DominoRoomTableToolbar" role="group">
                             @if(shiro.hasPermission("/dominoRoom/add")){
@@ -27,4 +35,8 @@
     </div>
 </div>
 <script src="${ctxPath}/static/modular/game/dominoRoom/dominoRoom.js"></script>
+<script>
+    $(function() {
+    });
+</script>
 @}

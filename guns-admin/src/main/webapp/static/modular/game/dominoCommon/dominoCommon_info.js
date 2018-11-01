@@ -60,21 +60,21 @@ DominoCommonInfoDlg.collectData = function() {
     .set('settleCd');
 }
 
-/**
- * 提交添加
- */
-DominoCommonInfoDlg.addSubmit = function() {
 
+/**
+ * 提交操作
+ */
+DominoCommonInfoDlg.operationSubmit = function(operation) {
     this.clearData();
     this.collectData();
-
+    var str = operation == "add" ? "添加" : "修改";
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/dominoCommon/add", function(data){
-        Feng.success("添加成功!");
+    var ajax = new $ax(Feng.ctxPath + "/dominoCommon/"+operation, function(data){
+        Feng.success(str+"成功!");
         window.parent.DominoCommon.table.refresh();
         DominoCommonInfoDlg.close();
     },function(data){
-        Feng.error("添加失败!" + data.responseJSON.message + "!");
+        Feng.error(str+"失败!" + data.responseJSON.message + "!");
     });
     ajax.set(this.dominoCommonInfoData);
     ajax.start();

@@ -3,6 +3,8 @@ package com.stylefeng.guns.modular.game.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.game.model.DominoCommon;
+import com.stylefeng.guns.modular.game.model.DominoRoom;
 import com.stylefeng.guns.modular.game.warpper.GoldCommonWarpper;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -45,8 +47,10 @@ public class GoldCommonController extends BaseController {
      * 跳转到添加炸金花通用配置
      */
     @RequestMapping("/goldCommon_add")
-    public String goldCommonAdd() {
-        return PREFIX + "goldCommon_add.html";
+    public String goldCommonAdd(Model model) {
+        model.addAttribute("operation", "add");
+        model.addAttribute("item", new GoldCommon());
+        return PREFIX + "goldCommon_operation.html";
     }
 
     /**
@@ -56,9 +60,10 @@ public class GoldCommonController extends BaseController {
     @DataSource(DBTypeEnum.gold)
     public String goldCommonUpdate(@PathVariable Integer goldCommonId, Model model) {
         GoldCommon goldCommon = goldCommonService.selectById(goldCommonId);
+        model.addAttribute("operation", "update");
         model.addAttribute("item",goldCommon);
         LogObjectHolder.me().set(goldCommon);
-        return PREFIX + "goldCommon_edit.html";
+        return PREFIX + "goldCommon_operation.html";
     }
 
     /**

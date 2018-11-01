@@ -4,6 +4,7 @@ import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
 import com.stylefeng.guns.modular.game.model.DominoCommon;
+import com.stylefeng.guns.modular.game.model.DominoRoom;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -41,8 +42,10 @@ public class DominoCommonController extends BaseController {
      * 跳转到添加游戏通用配置
      */
     @RequestMapping("/dominoCommon_add")
-    public String commonConfigAdd() {
-        return PREFIX + "dominoCommon_add.html";
+    public String commonConfigAdd(Model model) {
+        model.addAttribute("operation", "add");
+        model.addAttribute("item", new DominoCommon());
+        return PREFIX + "dominoCommon_operation.html";
     }
 
     /**
@@ -52,9 +55,10 @@ public class DominoCommonController extends BaseController {
     @DataSource(DBTypeEnum.domino)
     public String commonConfigUpdate(@PathVariable Integer commonConfigId, Model model) {
         DominoCommon dominoCommon = commonConfigService.selectById(commonConfigId);
+        model.addAttribute("operation", "update");
         model.addAttribute("item", dominoCommon);
         LogObjectHolder.me().set(dominoCommon);
-        return PREFIX + "dominoCommon_edit.html";
+        return PREFIX + "dominoCommon_operation.html";
     }
 
     /**

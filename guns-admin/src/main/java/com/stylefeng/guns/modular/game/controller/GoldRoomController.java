@@ -3,6 +3,7 @@ package com.stylefeng.guns.modular.game.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.game.model.DominoCommon;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -41,8 +42,10 @@ public class GoldRoomController extends BaseController {
      * 跳转到添加炸金花房间配置
      */
     @RequestMapping("/goldRoom_add")
-    public String goldRoomAdd() {
-        return PREFIX + "goldRoom_add.html";
+    public String goldRoomAdd(Model model) {
+        model.addAttribute("operation", "add");
+        model.addAttribute("item", new GoldRoom());
+        return PREFIX + "goldRoom_operation.html";
     }
 
     /**
@@ -52,9 +55,10 @@ public class GoldRoomController extends BaseController {
     @DataSource(DBTypeEnum.gold)
     public String goldRoomUpdate(@PathVariable Integer goldRoomId, Model model) {
         GoldRoom goldRoom = goldRoomService.selectById(goldRoomId);
+        model.addAttribute("operation", "update");
         model.addAttribute("item",goldRoom);
         LogObjectHolder.me().set(goldRoom);
-        return PREFIX + "goldRoom_edit.html";
+        return PREFIX + "goldRoom_operation.html";
     }
 
     /**

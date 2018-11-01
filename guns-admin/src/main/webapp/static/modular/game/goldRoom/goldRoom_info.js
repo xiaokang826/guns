@@ -66,8 +66,9 @@ GoldRoomInfoDlg.collectData = function() {
     .set('xiQian');
 }
 
+
 /**
- * 提交添加
+ * 提交操作
  */
 GoldRoomInfoDlg.addSubmit = function() {
 
@@ -89,18 +90,17 @@ GoldRoomInfoDlg.addSubmit = function() {
 /**
  * 提交修改
  */
-GoldRoomInfoDlg.editSubmit = function() {
-
+GoldRoomInfoDlg.operationSubmit = function(operation) {
     this.clearData();
     this.collectData();
-
+    var str = operation == "add" ? "添加" : "修改";
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/goldRoom/update", function(data){
-        Feng.success("修改成功!");
+    var ajax = new $ax(Feng.ctxPath + "/goldRoom/"+operation, function(data){
+        Feng.success(str+"成功!");
         window.parent.GoldRoom.table.refresh();
         GoldRoomInfoDlg.close();
     },function(data){
-        Feng.error("修改失败!" + data.responseJSON.message + "!");
+        Feng.error(str+"失败!" + data.responseJSON.message + "!");
     });
     ajax.set(this.goldRoomInfoData);
     ajax.start();

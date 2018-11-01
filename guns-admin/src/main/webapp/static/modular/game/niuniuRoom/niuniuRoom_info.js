@@ -63,7 +63,7 @@ NiuniuRoomInfoDlg.collectData = function() {
 }
 
 /**
- * 提交添加
+ * 提交操作
  */
 NiuniuRoomInfoDlg.addSubmit = function() {
 
@@ -85,18 +85,17 @@ NiuniuRoomInfoDlg.addSubmit = function() {
 /**
  * 提交修改
  */
-NiuniuRoomInfoDlg.editSubmit = function() {
-
+NiuniuRoomInfoDlg.operationSubmit = function(operation) {
     this.clearData();
     this.collectData();
-
+    var str = operation == "add" ? "添加" : "修改";
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/niuniuRoom/update", function(data){
-        Feng.success("修改成功!");
+    var ajax = new $ax(Feng.ctxPath + "/niuniuRoom/"+operation,function(data){
+        Feng.success(str+"成功!");
         window.parent.NiuniuRoom.table.refresh();
         NiuniuRoomInfoDlg.close();
     },function(data){
-        Feng.error("修改失败!" + data.responseJSON.message + "!");
+        Feng.error(str+"失败!" + data.responseJSON.message + "!");
     });
     ajax.set(this.niuniuRoomInfoData);
     ajax.start();
@@ -104,7 +103,7 @@ NiuniuRoomInfoDlg.editSubmit = function() {
 
 $(function() {
     //初始化房间开关
-    if($("#onOffValue").val() == undefined){
+    if($("#onOffValue").val() == undefined || $("#onOffValue").val() == ""){
         $("#onOff").val(0);
     }else{
         $("#onOff").val($("#onOffValue").val());

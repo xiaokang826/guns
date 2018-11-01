@@ -35,6 +35,8 @@ public class ReportDataController extends BaseController {
     @Autowired
     private IReportDataService reportDataService;
 
+    private List<Map<String,Object>> list = null;
+
     /**
      * 跳转到输赢报表首页
      */
@@ -70,6 +72,28 @@ public class ReportDataController extends BaseController {
     @DataSource(DBTypeEnum.report)
     public Object list(String gameType, String roomType, String userName, String beginTime, String endTime) {
         List<Map<String,Object>> list = reportDataService.selectWinLoseReport(gameType,roomType,userName,beginTime,endTime);
+//        int validBet = 0;
+//        int winLoseAmount = 0;
+//        if(list != null) {
+//            for (Map<String,Object> map : list) {
+//                validBet += (Integer) map.get("validBet");
+//                winLoseAmount += (Integer) map.get("winLoseAmount");
+//            }
+//        }
+//        super.getSession().setAttribute("validBet", validBet);
+//        super.getSession().setAttribute("winLoseAmount", winLoseAmount);
+        this.list = list;
+        return super.warpObject(new WinLoseReportWarpper(list));
+    }
+
+    /**
+     * 获取输赢报表列表
+     */
+    @RequestMapping(value = "/demo")
+    @ResponseBody
+    public String demo(@PathVariable Integer Id,Model model) {
+        System.out.println("================"+Id);
+        List<Map<String,Object>> list = this.list;
         int validBet = 0;
         int winLoseAmount = 0;
         if(list != null) {
@@ -78,10 +102,9 @@ public class ReportDataController extends BaseController {
                 winLoseAmount += (Integer) map.get("winLoseAmount");
             }
         }
-        super.getSession().setAttribute("validBet", validBet);
-        super.getSession().setAttribute("winLoseAmount", winLoseAmount);
-
-        return super.warpObject(new WinLoseReportWarpper(list));
+        model.addAttribute("operation",winLoseAmount);
+        return winLoseAmount+"";
+//        return super.warpObject(new WinLoseReportWarpper(list));
     }
 
     /**
