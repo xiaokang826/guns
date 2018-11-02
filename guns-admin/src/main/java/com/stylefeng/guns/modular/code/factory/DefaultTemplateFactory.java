@@ -29,8 +29,9 @@ public class DefaultTemplateFactory {
         templates.add(create("serviceSwitch","service-service开关"));
         templates.add(create("daoSwitch","dao-dao开关"));
         templates.add(create("indexPageSwitch","indexPage-首页开关"));
-        templates.add(create("addPageSwitch","addPage-添加页面开关"));
-        templates.add(create("editPageSwitch","editPage-编辑页面开关"));
+//        templates.add(create("addPageSwitch","addPage-添加页面开关"));
+//        templates.add(create("editPageSwitch","editPage-编辑页面开关"));
+        templates.add(create("editPageSwitch","operationPage-编辑页面开关"));
         templates.add(create("jsSwitch","indexJs-主页js开关"));
         templates.add(create("infoJsSwitch","infoJs-详情页js开关"));
         templates.add(create("sqlSwitch","sql-sql语句开关"));

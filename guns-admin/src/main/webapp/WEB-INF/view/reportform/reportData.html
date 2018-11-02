@@ -38,7 +38,7 @@
                             </div>
                         </div>
                         <div class="col-sm-8">
-                            <h2><p id="total"  class="text-danger"></p></h2>
+                            <h2><p id="total" class="text-danger"></p></h2>
                         </div>
                         <#table id="ReportDataTable"/>
                     </div>
@@ -55,19 +55,5 @@
     laydate.render({
         elem: '#endTime'
     });
-    function demo() {
-        ReportData.search();
-        console.log(${session.validBet})
-        $("#total").html(${session.validBet});
-    }
-
-
-
-    function getMyName(){
-        ReportData.search();
-        var myName=${session.validBet};
-        alert(myName);
-    }
-
 </script>
 @}

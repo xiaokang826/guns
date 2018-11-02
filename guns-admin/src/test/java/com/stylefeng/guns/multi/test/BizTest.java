@@ -1,17 +1,10 @@
 package com.stylefeng.guns.multi.test;
 
 import com.stylefeng.guns.base.BaseJunit;
-import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
-import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
-import com.stylefeng.guns.modular.reportform.service.IReportDataService;
-import com.stylefeng.guns.multi.service.TestService;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+import com.stylefeng.guns.modular.reportform.service.IWinLoseReportService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.jdbc.Sql;
 
-import javax.xml.crypto.Data;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -51,7 +44,7 @@ public class BizTest extends BaseJunit {
 //    }
 
     @Autowired
-    private IReportDataService reportDataService;
+    private IWinLoseReportService reportDataService;
 
 //    @Select()
 //    @Update()

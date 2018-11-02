@@ -31,16 +31,20 @@ public class ${context.bizEnBigName}Controller extends BaseController {
      * 跳转到添加${context.bizChName}
      */
     @RequestMapping("/${context.bizEnName}_add")
-    public String ${context.bizEnName}Add() {
-        return PREFIX + "${context.bizEnName}_add.html";
+    public String ${context.bizEnName}Add(Model model) {
+        model.addAttribute("operation", "add");
+        model.addAttribute("item", new ${context.entityName}());
+        return PREFIX + "${context.bizEnName}_edit.html";
     }
 
     /**
      * 跳转到修改${context.bizChName}
      */
     @RequestMapping("/${context.bizEnName}_update/{${context.bizEnName}Id}")
+    @DataSource()
     public String ${context.bizEnName}Update(@PathVariable Integer ${context.bizEnName}Id, Model model) {
         ${context.entityName} ${context.bizEnName} = ${context.bizEnName}Service.selectById(${context.bizEnName}Id);
+        model.addAttribute("operation", "update");
         model.addAttribute("item",${context.bizEnName});
         LogObjectHolder.me().set(${context.bizEnName});
         return PREFIX + "${context.bizEnName}_edit.html";
@@ -51,6 +55,7 @@ public class ${context.bizEnBigName}Controller extends BaseController {
      */
     @RequestMapping(value = "/list")
     @ResponseBody
+    @DataSource()
     public Object list(String condition) {
         return ${context.bizEnName}Service.selectList(null);
     }
@@ -60,6 +65,7 @@ public class ${context.bizEnBigName}Controller extends BaseController {
      */
     @RequestMapping(value = "/add")
     @ResponseBody
+    @DataSource()
     public Object add(${context.entityName} ${context.bizEnName}) {
         ${context.bizEnName}Service.insert(${context.bizEnName});
         return SUCCESS_TIP;
@@ -70,6 +76,7 @@ public class ${context.bizEnBigName}Controller extends BaseController {
      */
     @RequestMapping(value = "/delete")
     @ResponseBody
+    @DataSource()
     public Object delete(@RequestParam Integer ${context.bizEnName}Id) {
         ${context.bizEnName}Service.deleteById(${context.bizEnName}Id);
         return SUCCESS_TIP;
@@ -80,6 +87,7 @@ public class ${context.bizEnBigName}Controller extends BaseController {
      */
     @RequestMapping(value = "/update")
     @ResponseBody
+    @DataSource()
     public Object update(${context.entityName} ${context.bizEnName}) {
         ${context.bizEnName}Service.updateById(${context.bizEnName});
         return SUCCESS_TIP;
@@ -90,6 +98,7 @@ public class ${context.bizEnBigName}Controller extends BaseController {
      */
     @RequestMapping(value = "/detail/{${context.bizEnName}Id}")
     @ResponseBody
+    @DataSource()
     public Object detail(@PathVariable("${context.bizEnName}Id") Integer ${context.bizEnName}Id) {
         return ${context.bizEnName}Service.selectById(${context.bizEnName}Id);
     }

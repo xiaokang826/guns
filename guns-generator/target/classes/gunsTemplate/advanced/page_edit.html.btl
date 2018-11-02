@@ -4,6 +4,7 @@
         <div class="form-horizontal">
 
             <div class="row">
+                <input id="id" value="\${item.${table.fields[0].propertyName}}" type="hidden"/>
                 <div class="col-sm-6 b-r">
                     <% var leftSize = tool.toInt((table.fields.~size + 1) / 2); %>
                     <% var rightSize = tool.toInt(table.fields.~size - leftSize); %>
@@ -29,7 +30,7 @@
 
             <div class="row btn-group-m-t">
                 <div class="col-sm-10">
-                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="${context.bizEnBigName}InfoDlg.editSubmit()"/>
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="${context.bizEnBigName}InfoDlg.operationSubmit('\${operation}')"/>
                     <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="${context.bizEnBigName}InfoDlg.close()"/>
                 </div>
             </div>

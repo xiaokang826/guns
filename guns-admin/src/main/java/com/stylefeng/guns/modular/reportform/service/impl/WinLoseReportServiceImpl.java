@@ -2,9 +2,9 @@ package com.stylefeng.guns.modular.reportform.service.impl;
 
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
-import com.stylefeng.guns.modular.reportform.model.ReportData;
-import com.stylefeng.guns.modular.reportform.dao.ReportDataMapper;
-import com.stylefeng.guns.modular.reportform.service.IReportDataService;
+import com.stylefeng.guns.modular.reportform.model.WinLoseReport;
+import com.stylefeng.guns.modular.reportform.dao.WinLoseReportMapper;
+import com.stylefeng.guns.modular.reportform.service.IWinLoseReportService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +20,7 @@ import java.util.Map;
  * @since 2018-10-25
  */
 @Service
-public class ReportDataServiceImpl extends ServiceImpl<ReportDataMapper, ReportData> implements IReportDataService {
+public class WinLoseReportServiceImpl extends ServiceImpl<WinLoseReportMapper, WinLoseReport> implements IWinLoseReportService {
 
     /**
      * 向数据库插入模拟数据

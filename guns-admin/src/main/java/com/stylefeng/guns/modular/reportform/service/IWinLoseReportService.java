@@ -1,7 +1,7 @@
-package com.stylefeng.guns.modular.reportform.dao;
+package com.stylefeng.guns.modular.reportform.service;
 
-import com.stylefeng.guns.modular.reportform.model.ReportData;
-import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.stylefeng.guns.modular.reportform.model.WinLoseReport;
+import com.baomidou.mybatisplus.service.IService;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -9,15 +9,15 @@ import java.util.Map;
 
 /**
  * <p>
- *  Mapper 接口
+ *  服务类
  * </p>
  *
  * @author panghu
  * @since 2018-10-25
  */
-public interface ReportDataMapper extends BaseMapper<ReportData> {
+public interface IWinLoseReportService extends IService<WinLoseReport> {
 
-    int insertMapData(@Param("map") Map<String, Object> map);
+    int insertMapData(@Param("map") Map<String,Object> map);
 
     List<Map<String,Object>> selectWinLoseReport(@Param("gameType") String gameType,
                                                  @Param("roomType") String roomType,

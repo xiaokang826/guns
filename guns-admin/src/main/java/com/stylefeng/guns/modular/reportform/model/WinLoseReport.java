@@ -1,8 +1,7 @@
 package com.stylefeng.guns.modular.reportform.model;
 
-import com.baomidou.mybatisplus.enums.IdType;
 import java.util.Date;
-import com.baomidou.mybatisplus.annotations.TableId;
+
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
@@ -17,7 +16,7 @@ import java.io.Serializable;
  * @since 2018-10-25
  */
 @TableName("report_data")
-public class ReportData extends Model<ReportData> {
+public class WinLoseReport extends Model<WinLoseReport> {
 
     private static final long serialVersionUID = 1L;
 

@@ -3,9 +3,8 @@ package com.stylefeng.guns.modular.reportform.controller;
 import com.stylefeng.guns.core.base.controller.BaseController;
 import com.stylefeng.guns.core.mutidatasource.DBTypeEnum;
 import com.stylefeng.guns.core.mutidatasource.annotion.DataSource;
+import com.stylefeng.guns.modular.reportform.model.WinLoseReport;
 import com.stylefeng.guns.modular.reportform.warpper.WinLoseReportWarpper;
-import com.sun.deploy.net.HttpResponse;
-import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -14,8 +13,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.stylefeng.guns.core.log.LogObjectHolder;
 import org.springframework.web.bind.annotation.RequestParam;
-import com.stylefeng.guns.modular.reportform.model.ReportData;
-import com.stylefeng.guns.modular.reportform.service.IReportDataService;
+import com.stylefeng.guns.modular.reportform.service.IWinLoseReportService;
 
 import java.util.List;
 import java.util.Map;
@@ -33,7 +31,7 @@ public class ReportDataController extends BaseController {
     private String PREFIX = "/reportform/";
 
     @Autowired
-    private IReportDataService reportDataService;
+    private IWinLoseReportService reportDataService;
 
     private List<Map<String,Object>> list = null;
 
@@ -58,9 +56,9 @@ public class ReportDataController extends BaseController {
      */
     @RequestMapping("/reportData_update/{reportDataId}")
     public String reportDataUpdate(@PathVariable Integer reportDataId, Model model) {
-        ReportData reportData = reportDataService.selectById(reportDataId);
-        model.addAttribute("item",reportData);
-        LogObjectHolder.me().set(reportData);
+        WinLoseReport winLoseReport = reportDataService.selectById(reportDataId);
+        model.addAttribute("item", winLoseReport);
+        LogObjectHolder.me().set(winLoseReport);
         return PREFIX + "reportData_edit.html";
     }
 
@@ -72,28 +70,16 @@ public class ReportDataController extends BaseController {
     @DataSource(DBTypeEnum.report)
     public Object list(String gameType, String roomType, String userName, String beginTime, String endTime) {
         List<Map<String,Object>> list = reportDataService.selectWinLoseReport(gameType,roomType,userName,beginTime,endTime);
-//        int validBet = 0;
-//        int winLoseAmount = 0;
-//        if(list != null) {
-//            for (Map<String,Object> map : list) {
-//                validBet += (Integer) map.get("validBet");
-//                winLoseAmount += (Integer) map.get("winLoseAmount");
-//            }
-//        }
-//        super.getSession().setAttribute("validBet", validBet);
-//        super.getSession().setAttribute("winLoseAmount", winLoseAmount);
-        this.list = list;
+        this.list = list;//每次查询出来更新list 以便ajax更新前端显示
         return super.warpObject(new WinLoseReportWarpper(list));
     }
 
     /**
      * 获取输赢报表列表
      */
-    @RequestMapping(value = "/demo")
+    @RequestMapping(value = "/refresh")
     @ResponseBody
-    public String demo(@PathVariable Integer Id,Model model) {
-        System.out.println("================"+Id);
-        List<Map<String,Object>> list = this.list;
+    public String demo(String gameType) {//参数的key和ajax set的key需一致
         int validBet = 0;
         int winLoseAmount = 0;
         if(list != null) {
@@ -102,9 +88,8 @@ public class ReportDataController extends BaseController {
                 winLoseAmount += (Integer) map.get("winLoseAmount");
             }
         }
-        model.addAttribute("operation",winLoseAmount);
-        return winLoseAmount+"";
-//        return super.warpObject(new WinLoseReportWarpper(list));
+        System.out.println(validBet+"==========="+winLoseAmount);
+        return "总有效投注："+validBet+"，总输赢："+winLoseAmount;
     }
 
     /**
@@ -112,8 +97,8 @@ public class ReportDataController extends BaseController {
      */
     @RequestMapping(value = "/add")
     @ResponseBody
-    public Object add(ReportData reportData) {
-        reportDataService.insert(reportData);
+    public Object add(WinLoseReport winLoseReport) {
+        reportDataService.insert(winLoseReport);
         return SUCCESS_TIP;
     }
 
@@ -132,8 +117,8 @@ public class ReportDataController extends BaseController {
      */
     @RequestMapping(value = "/update")
     @ResponseBody
-    public Object update(ReportData reportData) {
-        reportDataService.updateById(reportData);
+    public Object update(WinLoseReport winLoseReport) {
+        reportDataService.updateById(winLoseReport);
         return SUCCESS_TIP;
     }
 

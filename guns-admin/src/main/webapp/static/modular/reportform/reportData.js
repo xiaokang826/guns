@@ -41,9 +41,15 @@ ReportData.search = function () {
     queryData['roomType'] = $("#roomType").val();
     queryData['userName'] = $("#userName").val();
     ReportData.table.refresh({query: queryData});
-   // alert('刷新啦'+ $validBet );
-   //  $("#total").html(session.validBet);
-   //  $("#total").html("总有效投注："+${session.validBet}，总输赢：${session.winLoseAmount}");
+    var ajax = new $ax(Feng.ctxPath + "/reportData/refresh", function (data) {
+        $("#total").html(data);
+    },function(data) {
+        Feng.error("Ajax数据更新出错！！！");
+    });
+    ajax.set("gameType",queryData.gameType);//测试数据 可删除
+    setTimeout(function () { //此处ajax延时启动
+        ajax.start()
+    },500);
 };
 
 $(function () {

@@ -54,40 +54,19 @@ ${context.bizEnBigName}InfoDlg.collectData = function() {
 }
 
 /**
- * 提交添加
+ * 操作提交
  */
-${context.bizEnBigName}InfoDlg.addSubmit = function() {
-
+${context.bizEnBigName}InfoDlg.operationSubmit = function(operation) {
     this.clearData();
     this.collectData();
-
+    var str = operation == "add" ? "添加" : "修改";
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/${context.bizEnName}/add", function(data){
-        Feng.success("添加成功!");
+    var ajax = new $ax(Feng.ctxPath + "/${context.bizEnName}/"+operation, function(data){
+        Feng.success(str+"成功!");
         window.parent.${context.bizEnBigName}.table.refresh();
         ${context.bizEnBigName}InfoDlg.close();
     },function(data){
-        Feng.error("添加失败!" + data.responseJSON.message + "!");
-    });
-    ajax.set(this.${context.bizEnName}InfoData);
-    ajax.start();
-}
-
-/**
- * 提交修改
- */
-${context.bizEnBigName}InfoDlg.editSubmit = function() {
-
-    this.clearData();
-    this.collectData();
-
-    //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/${context.bizEnName}/update", function(data){
-        Feng.success("修改成功!");
-        window.parent.${context.bizEnBigName}.table.refresh();
-        ${context.bizEnBigName}InfoDlg.close();
-    },function(data){
-        Feng.error("修改失败!" + data.responseJSON.message + "!");
+        Feng.error(str+"失败!" + data.responseJSON.message + "!");
     });
     ajax.set(this.${context.bizEnName}InfoData);
     ajax.start();

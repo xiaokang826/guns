@@ -52,6 +52,7 @@ public class DominoCommonController extends BaseController {
      * 跳转到修改游戏通用配置
      */
     @RequestMapping("/dominoCommon_update/{commonConfigId}")
+//    @DataSource(DBTypeEnum.domino)
     @DataSource(DBTypeEnum.domino)
     public String commonConfigUpdate(@PathVariable Integer commonConfigId, Model model) {
         DominoCommon dominoCommon = commonConfigService.selectById(commonConfigId);
