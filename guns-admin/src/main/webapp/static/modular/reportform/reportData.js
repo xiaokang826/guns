@@ -33,7 +33,8 @@ ReportData.initColumn = function () {
 /**
  * 查询输赢报表列表
  */
-ReportData.search = function () {
+ReportData.search = function (htmlId) {
+    console.log("当前页面id：=="+htmlId);
     var queryData = {};
     queryData['beginTime'] = $("#beginTime").val();
     queryData['endTime'] = $("#endTime").val();
@@ -53,6 +54,8 @@ ReportData.search = function () {
 };
 
 $(function () {
+    var htmlId = "${id}";
+    console.log("当前页面id：--"+htmlId);
     var defaultColunms = ReportData.initColumn();
     var table = new BSTable(ReportData.id, "/reportData/list", defaultColunms);
     table.setPaginationType("client");

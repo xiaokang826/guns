@@ -39,7 +39,9 @@ public class ReportDataController extends BaseController {
      * 跳转到输赢报表首页
      */
     @RequestMapping("")
-    public String index() {
+    public String index(Integer id, Model model) {
+        System.out.println("============"+id);
+        model.addAttribute("id",id);
         return PREFIX + "reportData.html";
     }
 
@@ -68,7 +70,8 @@ public class ReportDataController extends BaseController {
     @RequestMapping(value = "/list")
     @ResponseBody
     @DataSource(DBTypeEnum.report)
-    public Object list(String gameType, String roomType, String userName, String beginTime, String endTime) {
+    public Object list(String gameType, String roomType, String userName, String beginTime, String endTime, Model model) {
+        model.addAttribute("id",1111);
         List<Map<String,Object>> list = reportDataService.selectWinLoseReport(gameType,roomType,userName,beginTime,endTime);
         this.list = list;//每次查询出来更新list 以便ajax更新前端显示
         return super.warpObject(new WinLoseReportWarpper(list));

@@ -9,6 +9,7 @@
                 <div class="row row-lg">
                     <div class="col-sm-12">
                         <div class="row">
+                            <input type="hidden" id="htmlId" value="${id}">
                             <div class="col-sm-2">
                                 <#TimeCon id="beginTime" name="开始日期" isTime="false"/>
                             </div>
@@ -34,7 +35,7 @@
                                 <#NameCon id="userName" name="用户名" />
                             </div>
                             <div class="col-sm-1">
-                                <#button name="搜索" icon="fa-search" clickFun="ReportData.search()"/>
+                                <#button name="搜索" icon="fa-search" clickFun="ReportData.search('${id}')"/>
                             </div>
                         </div>
                         <div class="col-sm-8">

@@ -27,81 +27,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="reportData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/reportform/reportData.js">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+            <state relative-caret-position="952">
+              <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ajax-object.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/ajax-object.js">
+      <file leaf-file-name="MultiDataSourceConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/config/datasource/MultiDataSourceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="391">
+              <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap-table-object.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/bootstrap-table-object.js">
+      <file leaf-file-name="IDominoCommonService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/service/IDominoCommonService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="130" column="4" lean-forward="false" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
+            <state relative-caret-position="204">
+              <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="reportData.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/reportform/reportData.html">
+      <file leaf-file-name="DominoCommonServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/service/impl/DominoCommonServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="36" column="85" lean-forward="false" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
+            <state relative-caret-position="221">
+              <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WinLoseReportMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/dao/WinLoseReportMapper.java">
+      <file leaf-file-name="DominoCommon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/DominoCommon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+            <state relative-caret-position="442">
+              <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WinLoseReportMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/dao/mapping/WinLoseReportMapper.xml">
+      <file leaf-file-name="GoldCommon.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/GoldCommon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="66" column="32" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="66" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WinLoseReportServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/service/impl/WinLoseReportServiceImpl.java">
+      <file leaf-file-name="GoldRoom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/GoldRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="393">
+              <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReportDataController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/controller/ReportDataController.java">
+      <file leaf-file-name="NiuniuRoom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/NiuniuRoom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="71" column="124" lean-forward="false" selection-start-line="71" selection-start-column="124" selection-end-line="71" selection-end-column="124" />
+            <state relative-caret-position="289">
+              <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DominoRoom.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/DominoRoom.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NiuniuCommon.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/NiuniuCommon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="73" column="12" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -118,7 +138,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>daoConfig</find>
       <find>bizEnBigName</find>
       <find>CommonConfig</find>
       <find>----------------</find>
@@ -148,6 +167,7 @@
       <find>clearTimeout</find>
       <find>setTimeout</find>
       <find>ReportData</find>
+      <find>当前页面id</find>
     </findStrings>
     <replaceStrings>
       <replace>ItemText</replace>
@@ -187,9 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/dao/mapping/NiuniuRoomMapper.xml" />
-        <option value="$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/dao/NiuniuRoomMapper.java" />
-        <option value="$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/service/INiuniuRoomService.java" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/service/impl/NiuniuRoomServiceImpl.java" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/game/niuniuRoom/niuniuRoom.js" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/game/dominoRoom/dominoRoom_edit.html" />
@@ -235,6 +252,9 @@
         <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/game/dominoCommon/dominoCommon.js" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/tree-table-object.js" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/ajax-object.js" />
+        <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/bootstrap-table-object.js" />
+        <option value="$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/model/ReportData.java" />
+        <option value="$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/model/GameResults.java" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/controller/ReportDataController.java" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/reportform/reportData.html" />
         <option value="$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/reportform/reportData.js" />
@@ -264,8 +284,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-1457" />
+    <option name="y" value="42" />
     <option name="width" value="1376" />
     <option name="height" value="754" />
   </component>
@@ -284,6 +304,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,6 +355,27 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="datasource" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -345,7 +387,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="guns" type="b2602c69:ProjectViewProjectNode" />
@@ -356,44 +398,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="mapping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -405,7 +410,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -416,90 +421,10 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
-              <item name="warpper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="guns" type="b2602c69:ProjectViewProjectNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="guns-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="reportform" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -508,14 +433,13 @@
       <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../javamtia" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../goldfast" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -533,11 +457,11 @@
       <recent name="D:\CommonFile\guns\guns-admin\src\main\webapp\static\modular\reportform" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.stylefeng.guns.modular.reportform.model" />
       <recent name="com.stylefeng.guns.modular.game.warpper" />
       <recent name="com.stylefeng.guns.modular.item.warpper" />
       <recent name="com.stylefeng.guns.modular.system.dao" />
       <recent name="com.stylefeng.guns.modular.system.model" />
-      <recent name="com.stylefeng.guns.core.mutidatasource" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CommonFile\guns\guns-admin\src\main\webapp\static\modular\item" />
@@ -702,7 +626,12 @@
       <workItem from="1540522997259" duration="6209000" />
       <workItem from="1540533269277" duration="21792000" />
       <workItem from="1540779777581" duration="75880000" />
-      <workItem from="1541078159744" duration="17407000" />
+      <workItem from="1541078159744" duration="26337000" />
+      <workItem from="1541406026947" duration="2897000" />
+      <workItem from="1541752698204" duration="1220000" />
+      <workItem from="1542623978890" duration="4039000" />
+      <workItem from="1542788027031" duration="874000" />
+      <workItem from="1542854993241" duration="4623000" />
     </task>
     <servers />
   </component>
@@ -739,44 +668,44 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="268806000" />
+    <option name="totallyTimeSpent" value="291389000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
+    <frame x="-1608" y="-8" width="1616" height="886" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38249594" sideWeight="0.50303954" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15805471" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3873582" sideWeight="0.4969605" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32252836" sideWeight="0.4969605" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38249594" sideWeight="0.50303954" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15805471" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40680712" sideWeight="0.4969605" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22644377" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1966581" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3873582" sideWeight="0.4969605" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32901135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -798,7 +727,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="94" />
+      <option name="time" value="96" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
@@ -807,175 +736,11 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/game/dominoCommon/dominoCommon_operation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="20" column="142" lean-forward="false" selection-start-line="20" selection-start-column="142" selection-end-line="20" selection-end-column="142" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/game/dominoRoom/dominoRoom_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="108" column="27" lean-forward="false" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/game/goldRoom/goldRoom_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/game/niuniuCommon/niuniuCommon_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/GoldCommon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/GoldRoom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="84" column="19" lean-forward="false" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/controller/GoldRoomController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="80" column="0" lean-forward="false" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/game/goldCommon/goldCommon_add.html" />
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/game/goldRoom/goldRoom_operation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="23" column="75" lean-forward="false" selection-start-line="23" selection-start-column="75" selection-end-line="23" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/game/goldCommon/goldCommon_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="95" column="17" lean-forward="false" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/game/goldCommon/goldCommon_operation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-generator/src/main/java/com/stylefeng/guns/generator/engine/SimpleTemplateEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-39">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/select-list-object.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/code/code.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="82" column="70" lean-forward="false" selection-start-line="82" selection-start-column="61" selection-end-line="82" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/code/factory/DefaultTemplateFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="31" column="66" lean-forward="true" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/game/niuniuRoom/niuniuRoom_operation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="43" selection-end-line="24" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/item/user/user_edit.html" />
-    <entry file="file://$PROJECT_DIR$/guns-generator/src/main/resources/gunsTemplate/advanced/Controller.java.btl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/code/controller/CodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-464">
-          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/blabla/controller/UserDemoController.java" />
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/config/datasource/MultiDataSourceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="63" />
-          <folding>
-            <element signature="e#2415#2416#0" expanded="false" />
-            <element signature="e#2469#2470#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/game/niuniuRoom/niuniuRoom_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1479">
-          <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="18" selection-end-line="87" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-generator/src/main/resources/gunsTemplate/advanced/page_info.js.btl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="60" column="23" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/blabla/userDemo/userDemo_info.js" />
     <entry file="file://$PROJECT_DIR$/guns-generator/src/main/resources/gunsTemplate/advanced/page_edit.html.btl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
           <caret line="32" column="140" lean-forward="false" selection-start-line="32" selection-start-column="140" selection-end-line="32" selection-end-column="140" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -983,7 +748,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-357">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,7 +755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="67" column="59" lean-forward="true" selection-start-line="67" selection-start-column="32" selection-end-line="67" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -999,7 +762,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="2506" lean-forward="false" selection-start-line="1" selection-start-column="2506" selection-end-line="1" selection-end-column="2506" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1007,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="17" column="18" lean-forward="false" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1015,7 +776,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="63" column="3" lean-forward="true" selection-start-line="63" selection-start-column="3" selection-end-line="64" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1023,9 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1547">
           <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
-          <folding>
-            <marker date="1534134387000" expanded="true" signature="1387:1401" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1033,7 +790,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="87" column="2" lean-forward="true" selection-start-line="87" selection-start-column="2" selection-end-line="87" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1041,18 +797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-408">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/controller/DominoCommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="80" column="47" lean-forward="false" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="47" />
-          <folding>
-            <element signature="e#2328#2329#0" expanded="true" />
-            <element signature="e#2387#2388#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1060,7 +804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1068,7 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="7" column="21635" lean-forward="false" selection-start-line="7" selection-start-column="21635" selection-end-line="7" selection-end-column="21635" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1076,7 +818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2019">
           <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="134">
           <caret line="429" column="0" lean-forward="false" selection-start-line="429" selection-start-column="0" selection-end-line="429" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="106" column="44" lean-forward="true" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,7 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="512" column="0" lean-forward="false" selection-start-line="512" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1108,15 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/bootstrap-table-object.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="986">
-          <caret line="130" column="4" lean-forward="false" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1124,9 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="15045" column="30" lean-forward="true" selection-start-line="15045" selection-start-column="30" selection-end-line="15045" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1134,43 +860,137 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="12" column="8" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/controller/ReportDataController.java">
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/warpper/WinLoseReportWarpper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="71" column="124" lean-forward="false" selection-start-line="71" selection-start-column="124" selection-end-line="71" selection-end-column="124" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/reportform/reportData.js">
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/dao/mapping/WinLoseReportMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/reportform/reportData.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="36" column="85" lean-forward="false" selection-start-line="36" selection-start-column="85" selection-end-line="36" selection-end-column="85" />
-          <folding />
+        <state relative-caret-position="122">
+          <caret line="47" column="4" lean-forward="false" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/dao/WinLoseReportMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="221">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/dao/mapping/WinLoseReportMapper.xml">
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/code/controller/CodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="44" column="14" lean-forward="false" selection-start-line="44" selection-start-column="14" selection-end-line="44" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/js/common/bootstrap-table-object.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="114" column="0" lean-forward="true" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/sql/ReportData.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-core/src/main/java/com/stylefeng/guns/core/support/HttpKit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="58" column="46" lean-forward="true" selection-start-line="58" selection-start-column="46" selection-end-line="58" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-core/src/main/java/com/stylefeng/guns/core/base/controller/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/service/impl/WinLoseReportServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/service/IWinLoseReportService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="17" column="17" lean-forward="false" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/system/model/ReportData.java" />
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/model/ReportData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="143" column="0" lean-forward="true" selection-start-line="24" selection-start-column="3" selection-end-line="143" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/model/WinLoseReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-635">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/model/GameResults.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="62" column="32" lean-forward="true" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-context/5.0.5.RELEASE/spring-context-5.0.5.RELEASE-sources.jar!/org/springframework/ui/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/controller/DominoCommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="889">
+          <caret line="96" column="7" lean-forward="true" selection-start-line="96" selection-start-column="7" selection-end-line="96" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/WEB-INF/view/reportform/reportData.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/controller/ReportDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="73" column="36" lean-forward="false" selection-start-line="73" selection-start-column="36" selection-end-line="73" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/webapp/static/modular/reportform/reportData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="46" column="22" lean-forward="false" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-core/src/main/resources/META-INF/spring.factories">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1178,10 +998,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/reportform/service/impl/WinLoseReportServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/resources/META-INF/spring-devtools.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-core/src/main/java/com/stylefeng/guns/core/config/properties/MultiDataSourceProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="44" column="16" lean-forward="false" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
+          <folding>
+            <element signature="e#1164#1165#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/config/datasource/MultiDataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/service/IDominoCommonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/service/impl/DominoCommonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/DominoCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="46" column="24" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/DominoRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="42" column="12" lean-forward="false" selection-start-line="42" selection-start-column="12" selection-end-line="42" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/NiuniuCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="73" column="12" lean-forward="false" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/NiuniuRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="40" column="22" lean-forward="false" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/GoldRoom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guns-admin/src/main/java/com/stylefeng/guns/modular/game/model/GoldCommon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="66" column="32" lean-forward="false" selection-start-line="22" selection-start-column="3" selection-end-line="66" selection-end-column="32" />
           <folding />
         </state>
       </provider>
